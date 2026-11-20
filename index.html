@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case che stiamo guardando</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1c2420;--muted:#55605b;--line:#dcdfd9;--accent:#1f6f5c;--good:#2d7a4b;--goodbg:#e2f1e7;--warn:#8a6a12;--warnbg:#f6edcf;--mid:#1f5f8a;--midbg:#e1edf6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:20px 14px 60px}
+.wrap{max-width:720px;margin:0 auto}
+h1{font-size:30px;line-height:1.15;margin:0 0 8px}
+.upd{color:var(--muted);margin:0 0 6px}
+.help{margin:0 0 22px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.tag{font-size:15px;font-weight:700;border-radius:999px;padding:3px 12px}
+.t-match{background:var(--goodbg);color:var(--good)}
+.t-verify{background:var(--warnbg);color:var(--warn)}
+.t-near{background:var(--midbg);color:var(--mid)}
+.t-miss{background:#eee;color:#555}
+.t-new{background:var(--accent);color:#fff}
+h2{font-size:22px;line-height:1.25;margin:0 0 4px}
+.zone{color:var(--muted);margin:0 0 10px}
+.price{font-size:30px;font-weight:700;margin:0 0 8px}
+.facts{margin:0 0 14px}
+.btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:20px;border-radius:12px;padding:14px 16px;margin:8px 0 0}
+.btn.alt{background:#fff;color:var(--accent);border:2px solid var(--accent)}
+details{margin-top:12px;color:var(--muted)}
+summary{cursor:pointer;font-weight:600;color:var(--ink);padding:6px 0}
+.empty{text-align:center;color:var(--muted);padding:40px 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Case che stiamo guardando</h1>
+  <p class="upd" id="upd">Caricamento…</p>
+  <p class="help">Le prime della lista sono le più adatte. Tocca <b>Apri l'annuncio</b> per vedere foto e dettagli.</p>
+  <div id="list"></div>
+</div>
+<script>
+(function(){
+  var OK_CLASS=['A4','A3','A2','A1','A','B','C'];
+  function eur(n){return new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);}
+  function fit(l){
+    var c=[
+      l.price==null?null:l.price<=290000,
+      l.sqm==null?null:(l.sqm>=145&&l.sqm<=200),
+      l.bedrooms==null?null:l.bedrooms>=3,
+      l.bathrooms==null?null:l.bathrooms>=1,
+      l.garage==null?null:!!l.garage,
+      l.storage==null?null:!!l.storage,
+      l.energy==null?null:OK_CLASS.indexOf(String(l.energy).toUpperCase())>=0,
+      l.driveMin==null?null:l.driveMin<=10
+    ];
+    var no=c.filter(function(x){return x===false;}).length, unk=c.filter(function(x){return x===null;}).length;
+    if(no===0&&unk===0)return'match'; if(no===0)return'verify'; if(no===1)return'near'; return'miss';
+  }
+  var LABEL={match:'Molto adatta',verify:'Adatta, da controllare',near:'Quasi adatta',miss:'Meno adatta'};
+  var RANK={match:0,verify:1,near:2,miss:3};
+  function isNew(l){return l.firstSeen && (Date.now()-new Date(l.firstSeen).getTime())/86400000<2.5;}
+  function el(t,cls,txt){var n=document.createElement(t);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n;}
+  function safe(u){return typeof u==='string'&&/^https:\/\//.test(u)?u:null;}
+  function facts(l){
+    var p=[];
+    if(l.sqm!=null)p.push(l.sqm+' m²');
+    if(l.bedrooms!=null)p.push(l.bedrooms+(l.bedrooms===1?' camera':' camere'));
+    if(l.bathrooms!=null)p.push(l.bathrooms+(l.bathrooms===1?' bagno':' bagni'));
+    if(l.garage===true)p.push('garage');
+    if(l.energy)p.push('classe '+l.energy);
+    if(l.driveMin!=null)p.push('~'+l.driveMin+' min in auto dal centro');
+    return p.join(' · ');
+  }
+  fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+    var upd=document.getElementById('upd');
+    if(d.updated){
+      upd.textContent='Aggiornato '+new Intl.DateTimeFormat('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(d.updated));
+    } else upd.textContent='';
+    var rows=(d.listings||[]).slice().sort(function(a,b){return RANK[fit(a)]-RANK[fit(b)]||(a.price||1e12)-(b.price||1e12);});
+    var list=document.getElementById('list');
+    if(!rows.length){list.appendChild(el('div','empty','Nessuna casa in lista in questo momento.'));return;}
+    rows.forEach(function(l){
+      var f=fit(l),c=el('div','card'),tags=el('div','tags');
+      tags.appendChild(el('span','tag t-'+f,LABEL[f]));
+      if(isNew(l))tags.appendChild(el('span','tag t-new','Nuova'));
+      c.appendChild(tags);
+      c.appendChild(el('h2',null,l.title||'Casa'));
+      c.appendChild(el('p','zone',[l.zone,l.type].filter(Boolean).join(' · ')));
+      c.appendChild(el('p','price',l.price!=null?eur(l.price):'Prezzo su richiesta'));
+      c.appendChild(el('p','facts',facts(l)));
+      (l.sources||[]).forEach(function(s,i){
+        var u=safe(s.url); if(!u)return;
+        var a=el('a','btn'+(i?' alt':''),(i?'Apri anche su ':"Apri l'annuncio · ")+(s.name||'sito'));
+        a.href=u;a.target='_blank';a.rel='noopener noreferrer';c.appendChild(a);
+      });
+      if(l.note){var dt=el('details');dt.appendChild(el('summary',null,'Note'));dt.appendChild(el('p',null,l.note));c.appendChild(dt);}
+      list.appendChild(c);
+    });
+  }).catch(function(){document.getElementById('upd').textContent='Non riesco a caricare la lista. Riprova tra qualche minuto.';});
+})();
+</script>
+</body>
+</html>
