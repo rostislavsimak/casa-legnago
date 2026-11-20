@@ -5,29 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case che stiamo guardando</title>
 <style>
-:root{--bg:#f6f5f1;--card:#fff;--ink:#1c2420;--muted:#55605b;--line:#dcdfd9;--accent:#1f6f5c;--good:#2d7a4b;--goodbg:#e2f1e7;--warn:#8a6a12;--warnbg:#f6edcf;--mid:#1f5f8a;--midbg:#e1edf6}
+:root{
+  --bg:#f4f5f2;--card:#fff;--ink:#1d2623;--muted:#5d6a65;--line:#dde2dd;--accent:#1f6f5c;--accent-ink:#fff;
+  --ok:#2d7a4b;--ok-bg:#e3f1e8;--no:#b3392f;--no-bg:#f8e4e1;--unk:#8a6a12;--unk-bg:#f6edcf;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#121715;--card:#1a211e;--ink:#e7ece9;--muted:#9aa8a2;--line:#2b3531;--accent:#5cc0a5;--accent-ink:#0d1f19;
+  --ok:#6fcf93;--ok-bg:#1c3326;--no:#f0877d;--no-bg:#3a1f1c;--unk:#e2c45f;--unk-bg:#352d13;
+}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:20px 14px 60px}
-.wrap{max-width:720px;margin:0 auto}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:20px 14px 60px}
+.wrap{max-width:760px;margin:0 auto}
 h1{font-size:30px;line-height:1.15;margin:0 0 8px}
 .upd{color:var(--muted);margin:0 0 6px}
-.help{margin:0 0 22px;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 16px}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
-.tag{font-size:15px;font-weight:700;border-radius:999px;padding:3px 12px}
-.t-match{background:var(--goodbg);color:var(--good)}
-.t-verify{background:var(--warnbg);color:var(--warn)}
-.t-near{background:var(--midbg);color:var(--mid)}
-.t-miss{background:#eee;color:#555}
-.t-new{background:var(--accent);color:#fff}
-h2{font-size:22px;line-height:1.25;margin:0 0 4px}
-.zone{color:var(--muted);margin:0 0 10px}
-.price{font-size:30px;font-weight:700;margin:0 0 8px}
-.facts{margin:0 0 14px}
-.btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:20px;border-radius:12px;padding:14px 16px;margin:8px 0 0}
-.btn.alt{background:#fff;color:var(--accent);border:2px solid var(--accent)}
-details{margin-top:12px;color:var(--muted)}
-summary{cursor:pointer;font-weight:600;color:var(--ink);padding:6px 0}
+.help{margin:0 0 20px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;font-size:15px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 16px;display:flex;flex-direction:column;gap:12px}
+.card.match{border-left-color:var(--ok)}
+.card.verify{border-left-color:var(--unk)}
+.card.near{border-left-color:var(--accent)}
+.card.miss{opacity:.7}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:15px;font-weight:700;border-radius:999px;padding:3px 12px;background:var(--line);color:var(--ink)}
+.pill.match{background:var(--ok-bg);color:var(--ok)}
+.pill.verify{background:var(--unk-bg);color:var(--unk)}
+.pill.near{background:var(--line);color:var(--ink)}
+.pill.new{background:var(--accent);color:var(--accent-ink)}
+h2{font-size:22px;line-height:1.25;margin:4px 0 2px}
+.zone{color:var(--muted);font-size:16px;margin:0}
+.price{font-size:32px;font-weight:700;margin:0;font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:16px;border-radius:8px;padding:5px 10px;display:inline-flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
+.chip i{font-style:normal;font-weight:800}
+.chip.ok{background:var(--ok-bg);color:var(--ok)}
+.chip.no{background:var(--no-bg);color:var(--no)}
+.chip.unk{background:var(--unk-bg);color:var(--unk)}
+.note{margin:0;color:var(--muted);font-size:17px}
+.seen{margin:0;color:var(--muted);font-size:15px}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:20px;border-radius:12px;padding:14px 16px}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.links{display:flex;flex-direction:column;gap:8px}
 .empty{text-align:center;color:var(--muted);padding:40px 10px}
 </style>
 </head>
@@ -36,64 +53,70 @@ summary{cursor:pointer;font-weight:600;color:var(--ink);padding:6px 0}
   <h1>Case che stiamo guardando</h1>
   <p class="upd" id="upd">Caricamento…</p>
   <p class="help">Le prime della lista sono le più adatte. Tocca <b>Apri l'annuncio</b> per vedere foto e dettagli.</p>
+  <div class="legend">
+    <span class="chip ok"><i>✓</i> va bene</span>
+    <span class="chip no"><i>✗</i> non va bene</span>
+    <span class="chip unk"><i>?</i> da chiedere</span>
+  </div>
   <div id="list"></div>
 </div>
 <script>
 (function(){
   var OK_CLASS=['A4','A3','A2','A1','A','B','C'];
   function eur(n){return new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);}
+  function checks(l){
+    var c=[];
+    function add(ok,text){c.push({st:ok===null?'unk':(ok?'ok':'no'),text:text});}
+    add(l.price==null?null:l.price<=290000, l.price==null?'prezzo n.d.':eur(l.price));
+    add(l.sqm==null?null:(l.sqm>=145&&l.sqm<=200), l.sqm==null?'m² n.d.':l.sqm+' m²');
+    add(l.bedrooms==null?null:l.bedrooms>=3, l.bedrooms==null?'camere n.d.':l.bedrooms+(l.bedrooms===1?' camera':' camere'));
+    add(l.bathrooms==null?null:l.bathrooms>=1, l.bathrooms==null?'bagni n.d.':l.bathrooms+(l.bathrooms===1?' bagno':' bagni'));
+    add(l.garage==null?null:!!l.garage, l.garage==null?'garage n.d.':(l.garage?'garage':'senza garage'));
+    add(l.storage==null?null:!!l.storage, l.storage==null?'ripostiglio n.d.':(l.storage?'ripostiglio/cantina':'senza ripostiglio'));
+    var e=l.energy?String(l.energy).toUpperCase():null;
+    add(e==null?null:OK_CLASS.indexOf(e)>=0, e==null?'classe n.d.':'classe '+e);
+    add(l.driveMin==null?null:l.driveMin<=10, l.driveMin==null?'distanza n.d.':'~'+l.driveMin+' min in auto dal centro');
+    if(l.renovate===true)add(false,'da ristrutturare');
+    return c;
+  }
   function fit(l){
-    var c=[
-      l.price==null?null:l.price<=290000,
-      l.sqm==null?null:(l.sqm>=145&&l.sqm<=200),
-      l.bedrooms==null?null:l.bedrooms>=3,
-      l.bathrooms==null?null:l.bathrooms>=1,
-      l.garage==null?null:!!l.garage,
-      l.storage==null?null:!!l.storage,
-      l.energy==null?null:OK_CLASS.indexOf(String(l.energy).toUpperCase())>=0,
-      l.driveMin==null?null:l.driveMin<=10
-    ];
-    var no=c.filter(function(x){return x===false;}).length, unk=c.filter(function(x){return x===null;}).length;
+    var c=checks(l),no=c.filter(function(x){return x.st==='no';}).length,unk=c.filter(function(x){return x.st==='unk';}).length;
     if(no===0&&unk===0)return'match'; if(no===0)return'verify'; if(no===1)return'near'; return'miss';
   }
-  var LABEL={match:'Molto adatta',verify:'Adatta, da controllare',near:'Quasi adatta',miss:'Meno adatta'};
+  var LABEL={match:'Compatibile',verify:'Da verificare',near:'Quasi',miss:'Non compatibile'};
   var RANK={match:0,verify:1,near:2,miss:3};
+  var MARK={ok:'✓',no:'✗',unk:'?'};
   function isNew(l){return l.firstSeen && (Date.now()-new Date(l.firstSeen).getTime())/86400000<2.5;}
   function el(t,cls,txt){var n=document.createElement(t);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n;}
   function safe(u){return typeof u==='string'&&/^https:\/\//.test(u)?u:null;}
-  function facts(l){
-    var p=[];
-    if(l.sqm!=null)p.push(l.sqm+' m²');
-    if(l.bedrooms!=null)p.push(l.bedrooms+(l.bedrooms===1?' camera':' camere'));
-    if(l.bathrooms!=null)p.push(l.bathrooms+(l.bathrooms===1?' bagno':' bagni'));
-    if(l.garage===true)p.push('garage');
-    if(l.energy)p.push('classe '+l.energy);
-    if(l.driveMin!=null)p.push('~'+l.driveMin+' min in auto dal centro');
-    return p.join(' · ');
-  }
   fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
     var upd=document.getElementById('upd');
-    if(d.updated){
-      upd.textContent='Aggiornato '+new Intl.DateTimeFormat('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(d.updated));
-    } else upd.textContent='';
+    upd.textContent=d.updated?'Aggiornato '+new Intl.DateTimeFormat('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(d.updated)):'';
     var rows=(d.listings||[]).slice().sort(function(a,b){return RANK[fit(a)]-RANK[fit(b)]||(a.price||1e12)-(b.price||1e12);});
     var list=document.getElementById('list');
     if(!rows.length){list.appendChild(el('div','empty','Nessuna casa in lista in questo momento.'));return;}
     rows.forEach(function(l){
-      var f=fit(l),c=el('div','card'),tags=el('div','tags');
-      tags.appendChild(el('span','tag t-'+f,LABEL[f]));
-      if(isNew(l))tags.appendChild(el('span','tag t-new','Nuova'));
-      c.appendChild(tags);
-      c.appendChild(el('h2',null,l.title||'Casa'));
-      c.appendChild(el('p','zone',[l.zone,l.type].filter(Boolean).join(' · ')));
+      var f=fit(l),c=el('article','card '+f),pills=el('div','pills');
+      pills.appendChild(el('span','pill '+f,LABEL[f]));
+      if(isNew(l))pills.appendChild(el('span','pill new','Nuovo'));
+      var head=el('div');
+      head.appendChild(pills);
+      head.appendChild(el('h2',null,l.title||'Casa'));
+      head.appendChild(el('p','zone',[l.zone,l.type].filter(Boolean).join(' · ')));
+      c.appendChild(head);
       c.appendChild(el('p','price',l.price!=null?eur(l.price):'Prezzo su richiesta'));
-      c.appendChild(el('p','facts',facts(l)));
+      var chips=el('div','chips');
+      checks(l).forEach(function(x){var s=el('span','chip '+x.st);s.appendChild(el('i',null,MARK[x.st]));s.appendChild(document.createTextNode(x.text));chips.appendChild(s);});
+      c.appendChild(chips);
+      if(l.note)c.appendChild(el('p','note',l.note));
+      var links=el('div','links');
       (l.sources||[]).forEach(function(s,i){
         var u=safe(s.url); if(!u)return;
         var a=el('a','btn'+(i?' alt':''),(i?'Apri anche su ':"Apri l'annuncio · ")+(s.name||'sito'));
-        a.href=u;a.target='_blank';a.rel='noopener noreferrer';c.appendChild(a);
+        a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.appendChild(a);
       });
-      if(l.note){var dt=el('details');dt.appendChild(el('summary',null,'Note'));dt.appendChild(el('p',null,l.note));c.appendChild(dt);}
+      c.appendChild(links);
+      if(l.firstSeen)c.appendChild(el('p','seen','visto la prima volta il '+new Intl.DateTimeFormat('it-IT',{day:'numeric',month:'long'}).format(new Date(l.firstSeen))));
       list.appendChild(c);
     });
   }).catch(function(){document.getElementById('upd').textContent='Non riesco a caricare la lista. Riprova tra qualche minuto.';});
