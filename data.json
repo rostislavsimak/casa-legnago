@@ -519,5 +519,20 @@
    "questions": []
   }
  ],
- "appointments": []
+ "appointments": [
+  {
+   "id": "almerini-47-studio-2026-11-23",
+   "listingId": "almerini-47",
+   "title": "Villa in Via Almerini 47 — incontro con lo studio tecnico",
+   "zone": "Studio De Berti, Via Diaz 1",
+   "price": 275000,
+   "when": "2026-11-23T16:00:00+01:00",
+   "outcome": null,
+   "outcomeNote": null,
+   "uk": {
+    "title": "Вілла, вул. Альмеріні 47 — зустріч з інженерним бюро",
+    "zone": "Бюро Де Берті, вул. Діаз 1"
+   }
+  }
+ ]
 }
