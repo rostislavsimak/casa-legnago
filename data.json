@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T09:05:00+01:00",
+ "updated": "2026-11-20T13:30:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -517,6 +517,42 @@
    },
    "priceHistory": [],
    "questions": []
+  },
+  {
+   "id": "casa-pilastrina-vangadizza-198",
+   "title": "Villa bifamiliare in Via Pilastrina, Vangadizza",
+   "type": "Villa bifamiliare",
+   "zone": "Vangadizza (Legnago)",
+   "price": 198000,
+   "sqm": 214,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": "D",
+   "driveMin": 6,
+   "firstSeen": "2026-11-20",
+   "note": "Casa del 1975 ben tenuta, libera subito: soggiorno, studio, cucina abitabile, 3 camere matrimoniali e 2 bagni; al piano terra garage e taverna, cantina, grande terreno sul retro (circa 9.000 m²). Classe energetica D. Da chiedere: com'è la cantina e lo stato di impianti e serramenti.",
+   "sources": [
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/54509564/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-20",
+     "price": 198000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Двоквартирна вілла на вул. Пілястріна, Вангадицца",
+    "type": "Двоквартирна вілла",
+    "zone": "Вангадицца (Леньяго)",
+    "note": "Доглянутий будинок 1975 року, вільний одразу: вітальня, кабінет, кухня, 3 подружні спальні та 2 ванні кімнати; на першому поверсі гараж і таверна, підвал, велика ділянка позаду (близько 9000 м²). Енергетичний клас D. Треба уточнити: який підвал і в якому стані комунікації та вікна.",
+    "questions": []
+   }
   }
  ],
  "appointments": [
