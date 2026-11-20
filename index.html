@@ -14,12 +14,23 @@
   --ok:#6fcf93;--ok-bg:#1c3326;--no:#f0877d;--no-bg:#3a1f1c;--unk:#e2c45f;--unk-bg:#352d13;
 }}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:20px 14px 60px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:16px 14px 60px}
 .wrap{max-width:760px;margin:0 auto}
+.lang{display:flex;justify-content:flex-end;gap:8px;margin:0 0 10px}
+.lang button{font:700 17px/1 inherit;font-family:inherit;padding:10px 16px;border-radius:10px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 h1{font-size:30px;line-height:1.15;margin:0 0 8px}
 .upd{color:var(--muted);margin:0 0 6px}
-.help{margin:0 0 20px;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;font-size:15px;color:var(--muted)}
+.help{margin:0 0 16px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.vbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 14px}
+.vbox h2{font-size:15px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 8px}
+.vrow{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-top:1px solid var(--line)}
+.vrow:first-of-type{border-top:0;padding-top:0}
+.vwhen{font-weight:700;font-size:20px}
+.vwhat a{color:var(--accent);font-weight:600}
+.vwhat small{display:block;color:var(--muted);font-size:16px}
+.vnone{color:var(--muted);margin:0}
 .card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 16px;display:flex;flex-direction:column;gap:12px}
 .card.match{border-left-color:var(--ok)}
 .card.verify{border-left-color:var(--unk)}
@@ -29,11 +40,13 @@ h1{font-size:30px;line-height:1.15;margin:0 0 8px}
 .pill{font-size:15px;font-weight:700;border-radius:999px;padding:3px 12px;background:var(--line);color:var(--ink)}
 .pill.match{background:var(--ok-bg);color:var(--ok)}
 .pill.verify{background:var(--unk-bg);color:var(--unk)}
-.pill.near{background:var(--line);color:var(--ink)}
 .pill.new{background:var(--accent);color:var(--accent-ink)}
-h2{font-size:22px;line-height:1.25;margin:4px 0 2px}
+.pill.visit{background:var(--unk-bg);color:var(--unk)}
+.pill.liked{background:var(--ok-bg);color:var(--ok)}
+h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
 .zone{color:var(--muted);font-size:16px;margin:0}
 .price{font-size:32px;font-weight:700;margin:0;font-variant-numeric:tabular-nums}
+.oldprice{color:var(--muted);font-size:16px;margin:2px 0 0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:16px;border-radius:8px;padding:5px 10px;display:inline-flex;gap:6px;align-items:center;font-variant-numeric:tabular-nums}
 .chip i{font-style:normal;font-weight:800}
@@ -41,6 +54,9 @@ h2{font-size:22px;line-height:1.25;margin:4px 0 2px}
 .chip.no{background:var(--no-bg);color:var(--no)}
 .chip.unk{background:var(--unk-bg);color:var(--unk)}
 .note{margin:0;color:var(--muted);font-size:17px}
+.qs-t{margin:0 0 -6px;font-weight:700;color:var(--unk);font-size:16px}
+.qs{margin:0;padding:12px 14px 12px 34px;background:var(--unk-bg);border-radius:10px;font-size:17px}
+.qs li{margin:4px 0}
 .seen{margin:0;color:var(--muted);font-size:15px}
 .btn{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:20px;border-radius:12px;padding:14px 16px}
 .btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
@@ -50,76 +66,148 @@ h2{font-size:22px;line-height:1.25;margin:4px 0 2px}
 </head>
 <body>
 <div class="wrap">
-  <h1>Case che stiamo guardando</h1>
-  <p class="upd" id="upd">Caricamento…</p>
-  <p class="help">Le prime della lista sono le più adatte. Tocca <b>Apri l'annuncio</b> per vedere foto e dettagli.</p>
-  <div class="legend">
-    <span class="chip ok"><i>✓</i> va bene</span>
-    <span class="chip no"><i>✗</i> non va bene</span>
-    <span class="chip unk"><i>?</i> da chiedere</span>
+  <div class="lang" role="group" aria-label="Lingua / Мова">
+    <button type="button" data-lang="it">Italiano</button>
+    <button type="button" data-lang="uk">Українська</button>
   </div>
+  <h1 id="t-title"></h1>
+  <p class="upd" id="upd"></p>
+  <p class="help" id="t-help"></p>
+  <div class="legend" id="legend"></div>
+  <div id="visits"></div>
   <div id="list"></div>
 </div>
 <script>
 (function(){
-  var OK_CLASS=['A4','A3','A2','A1','A','B','C'];
-  function eur(n){return new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);}
+  var T={
+    it:{title:'Case che stiamo guardando',updated:'Aggiornato',loading:'Caricamento…',
+      help:"Le prime della lista sono le più adatte. Tocca «Apri l'annuncio» per vedere foto e dettagli.",
+      ok:'va bene',no:'non va bene',unk:'da chiedere',
+      match:'Compatibile',verify:'Da verificare',near:'Quasi',miss:'Non compatibile',isNew:'Nuovo',liked:'Piaciuta',visit:'Visita',
+      priceNA:'Prezzo su richiesta',was:'era',changed:'cambiato il',
+      sqmNA:'m² n.d.',bedNA:'camere n.d.',bathNA:'bagni n.d.',garageNA:'garage n.d.',garage:'garage',noGarage:'senza garage',
+      storeNA:'ripostiglio n.d.',store:'ripostiglio/cantina',noStore:'senza ripostiglio',classNA:'classe n.d.',cls:'classe',
+      distNA:'distanza n.d.',dist:function(m){return '~'+m+' min in auto dal centro';},reno:'da ristrutturare',
+      bed:function(n){return n+(n===1?' camera':' camere');},bath:function(n){return n+(n===1?' bagno':' bagni');},
+      open:"Apri l'annuncio · ",openAlso:'Apri anche su ',seen:'visto la prima volta il',ask:'Da chiedere in visita',
+      next:'Prossime visite',noVisits:'Nessuna visita in programma.',evalTitle:'In valutazione',done:'Visite fatte',
+      discarded:'scartata',pending:'esito da segnare',empty:'Nessuna casa in lista in questo momento.',
+      err:'Non riesco a caricare la lista. Riprova tra qualche minuto.',locale:'it-IT'},
+    uk:{title:'Будинки, які ми розглядаємо',updated:'Оновлено',loading:'Завантаження…',
+      help:'Найкращі варіанти — на початку списку. Натисніть «Відкрити оголошення», щоб побачити фото та деталі.',
+      ok:'підходить',no:'не підходить',unk:'треба уточнити',
+      match:'Підходить',verify:'Треба перевірити',near:'Майже',miss:'Не підходить',isNew:'Нове',liked:'Сподобався',visit:'Перегляд',
+      priceNA:'Ціна за запитом',was:'було',changed:'змінено',
+      sqmNA:'площа невідома',bedNA:'спальні: невідомо',bathNA:'ванні: невідомо',garageNA:'гараж: невідомо',garage:'гараж',noGarage:'без гаража',
+      storeNA:'комора: невідомо',store:'комора/підвал',noStore:'без комори',classNA:'клас невідомий',cls:'клас',
+      distNA:'відстань невідома',dist:function(m){return '~'+m+' хв на авто від центру';},reno:'потребує ремонту',
+      bed:function(n){return n+' '+(n===1?'спальня':(n>=2&&n<=4?'спальні':'спалень'));},
+      bath:function(n){return n+' '+(n===1?'ванна кімната':(n>=2&&n<=4?'ванні кімнати':'ванних кімнат'));},
+      open:'Відкрити оголошення · ',openAlso:'Відкрити також на ',seen:'вперше побачено',ask:'Що запитати під час перегляду',
+      next:'Найближчі перегляди',noVisits:'Запланованих переглядів немає.',evalTitle:'Розглядаємо',done:'Проведені перегляди',
+      discarded:'відхилено',pending:'результат ще не відомо',empty:'Зараз у списку немає будинків.',
+      err:'Не вдається завантажити список. Спробуйте за кілька хвилин.',locale:'uk-UA'}
+  };
+  var OK_CLASS=['A4','A3','A2','A1','A','B','C'], RANK={match:0,verify:1,near:2,miss:3}, MARK={ok:'✓',no:'✗',unk:'?'}, PAST_MS=2*3600*1000;
+  var lang='it', data=null;
+  try{ var q=new URLSearchParams(location.search).get('lang'); if(q==='uk'||q==='it') lang=q; else { var s=localStorage.getItem('lang'); if(s==='uk'||s==='it') lang=s; } }catch(e){}
+  function t(){return T[lang];}
+  function tr(o,k){ return (lang==='uk' && o.uk && o.uk[k]) ? o.uk[k] : o[k]; }
+  function eur(n){return new Intl.NumberFormat(t().locale,{style:'currency',currency:'EUR',currencyDisplay:'narrowSymbol',maximumFractionDigits:0}).format(n);}
+  function fmtWhen(w){return new Intl.DateTimeFormat(t().locale,{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(w));}
+  function fmtDay(d){return new Intl.DateTimeFormat(t().locale,{day:'numeric',month:'long'}).format(new Date(d));}
+  function el(tag,cls,txt){var n=document.createElement(tag);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n;}
+  function safe(u){return typeof u==='string'&&/^https:\/\//.test(u)?u:null;}
   function checks(l){
-    var c=[];
+    var L=t(),c=[];
     function add(ok,text){c.push({st:ok===null?'unk':(ok?'ok':'no'),text:text});}
-    add(l.price==null?null:l.price<=290000, l.price==null?'prezzo n.d.':eur(l.price));
-    add(l.sqm==null?null:(l.sqm>=145&&l.sqm<=200), l.sqm==null?'m² n.d.':l.sqm+' m²');
-    add(l.bedrooms==null?null:l.bedrooms>=3, l.bedrooms==null?'camere n.d.':l.bedrooms+(l.bedrooms===1?' camera':' camere'));
-    add(l.bathrooms==null?null:l.bathrooms>=1, l.bathrooms==null?'bagni n.d.':l.bathrooms+(l.bathrooms===1?' bagno':' bagni'));
-    add(l.garage==null?null:!!l.garage, l.garage==null?'garage n.d.':(l.garage?'garage':'senza garage'));
-    add(l.storage==null?null:!!l.storage, l.storage==null?'ripostiglio n.d.':(l.storage?'ripostiglio/cantina':'senza ripostiglio'));
+    add(l.price==null?null:l.price<=290000, l.price==null?L.priceNA:eur(l.price));
+    add(l.sqm==null?null:(l.sqm>=145&&l.sqm<=200), l.sqm==null?L.sqmNA:l.sqm+' m²');
+    add(l.bedrooms==null?null:l.bedrooms>=3, l.bedrooms==null?L.bedNA:L.bed(l.bedrooms));
+    add(l.bathrooms==null?null:l.bathrooms>=1, l.bathrooms==null?L.bathNA:L.bath(l.bathrooms));
+    add(l.garage==null?null:!!l.garage, l.garage==null?L.garageNA:(l.garage?L.garage:L.noGarage));
+    add(l.storage==null?null:!!l.storage, l.storage==null?L.storeNA:(l.storage?L.store:L.noStore));
     var e=l.energy?String(l.energy).toUpperCase():null;
-    add(e==null?null:OK_CLASS.indexOf(e)>=0, e==null?'classe n.d.':'classe '+e);
-    add(l.driveMin==null?null:l.driveMin<=10, l.driveMin==null?'distanza n.d.':'~'+l.driveMin+' min in auto dal centro');
-    if(l.renovate===true)add(false,'da ristrutturare');
+    add(e==null?null:OK_CLASS.indexOf(e)>=0, e==null?L.classNA:L.cls+' '+e);
+    add(l.driveMin==null?null:l.driveMin<=10, l.driveMin==null?L.distNA:L.dist(l.driveMin));
+    if(l.renovate===true)add(false,L.reno);
     return c;
   }
-  function fit(l){
-    var c=checks(l),no=c.filter(function(x){return x.st==='no';}).length,unk=c.filter(function(x){return x.st==='unk';}).length;
-    if(no===0&&unk===0)return'match'; if(no===0)return'verify'; if(no===1)return'near'; return'miss';
+  function fit(l){var c=checks(l),no=c.filter(function(x){return x.st==='no';}).length,unk=c.filter(function(x){return x.st==='unk';}).length;
+    if(no===0&&unk===0)return'match'; if(no===0)return'verify'; if(no===1)return'near'; return'miss';}
+  function isNew(l){return l.firstSeen&&(Date.now()-new Date(l.firstSeen).getTime())/86400000<2.5;}
+  function appts(){return (data&&data.appointments)||[];}
+  function upcoming(a){return !a.outcome && new Date(a.when).getTime()>Date.now()-PAST_MS;}
+  function nextVisit(id){return appts().filter(function(a){return a.listingId===id&&upcoming(a);}).sort(function(a,b){return new Date(a.when)-new Date(b.when);})[0];}
+  function liked(id){return appts().some(function(a){return a.listingId===id&&a.outcome==='liked';});}
+
+  function renderStatic(){
+    var L=t();
+    document.documentElement.lang=lang; document.title=L.title;
+    document.getElementById('t-title').textContent=L.title;
+    document.getElementById('t-help').textContent=L.help;
+    var lg=document.getElementById('legend'); lg.textContent='';
+    ['ok','no','unk'].forEach(function(k){var s=el('span','chip '+k);s.appendChild(el('i',null,MARK[k]));s.appendChild(document.createTextNode(L[k]));lg.appendChild(s);});
+    [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-lang')===lang));});
+    document.getElementById('upd').textContent = data&&data.updated ? L.updated+' '+fmtWhen(data.updated) : (data?'':L.loading);
   }
-  var LABEL={match:'Compatibile',verify:'Da verificare',near:'Quasi',miss:'Non compatibile'};
-  var RANK={match:0,verify:1,near:2,miss:3};
-  var MARK={ok:'✓',no:'✗',unk:'?'};
-  function isNew(l){return l.firstSeen && (Date.now()-new Date(l.firstSeen).getTime())/86400000<2.5;}
-  function el(t,cls,txt){var n=document.createElement(t);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n;}
-  function safe(u){return typeof u==='string'&&/^https:\/\//.test(u)?u:null;}
-  fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
-    var upd=document.getElementById('upd');
-    upd.textContent=d.updated?'Aggiornato '+new Intl.DateTimeFormat('it-IT',{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(d.updated)):'';
-    var rows=(d.listings||[]).slice().sort(function(a,b){return RANK[fit(a)]-RANK[fit(b)]||(a.price||1e12)-(b.price||1e12);});
-    var list=document.getElementById('list');
-    if(!rows.length){list.appendChild(el('div','empty','Nessuna casa in lista in questo momento.'));return;}
+  function renderVisits(){
+    var L=t(),box=document.getElementById('visits'); box.textContent=''; if(!data)return;
+    var byId={}; (data.listings||[]).forEach(function(l){byId[l.id]=l;});
+    function row(a,extra){
+      var l=byId[a.listingId]||{}, r=el('div','vrow'), w=el('span','vwhat');
+      r.appendChild(el('span','vwhen',fmtWhen(a.when)));
+      var u=safe(((l.sources||[])[0]||{}).url)||safe(a.url), name=tr(a,'title')||tr(l,'title')||'—';
+      if(u){var an=el('a',null,name);an.href=u;an.target='_blank';an.rel='noopener noreferrer';w.appendChild(an);} else w.appendChild(el('span',null,name));
+      var sub=[tr(a,'zone')||tr(l,'zone'), (a.price||l.price)?eur(a.price||l.price):null, extra].filter(Boolean).join(' · ');
+      if(sub)w.appendChild(el('small',null,sub));
+      r.appendChild(w); return r;
+    }
+    var up=appts().filter(upcoming).sort(function(a,b){return new Date(a.when)-new Date(b.when);});
+    var lk=appts().filter(function(a){return a.outcome==='liked';});
+    var dn=appts().filter(function(a){return !upcoming(a)&&a.outcome!=='liked';}).sort(function(a,b){return new Date(b.when)-new Date(a.when);});
+    var b1=el('section','vbox'); b1.appendChild(el('h2',null,L.next));
+    if(up.length) up.forEach(function(a){b1.appendChild(row(a));}); else b1.appendChild(el('p','vnone',L.noVisits));
+    box.appendChild(b1);
+    if(lk.length){var b2=el('section','vbox');b2.appendChild(el('h2',null,L.evalTitle));lk.forEach(function(a){b2.appendChild(row(a,tr(a,'outcomeNote')||null));});box.appendChild(b2);}
+    if(dn.length){var b3=el('section','vbox');b3.appendChild(el('h2',null,L.done));dn.forEach(function(a){var n=tr(a,'outcomeNote');b3.appendChild(row(a,a.outcome==='discarded'?L.discarded+(n?': '+n:''):L.pending));});box.appendChild(b3);}
+  }
+  function renderList(){
+    var L=t(),list=document.getElementById('list'); list.textContent=''; if(!data)return;
+    var rows=(data.listings||[]).slice().sort(function(a,b){return RANK[fit(a)]-RANK[fit(b)]||(a.price||1e12)-(b.price||1e12);});
+    if(!rows.length){list.appendChild(el('div','empty',L.empty));return;}
     rows.forEach(function(l){
-      var f=fit(l),c=el('article','card '+f),pills=el('div','pills');
-      pills.appendChild(el('span','pill '+f,LABEL[f]));
-      if(isNew(l))pills.appendChild(el('span','pill new','Nuovo'));
-      var head=el('div');
-      head.appendChild(pills);
-      head.appendChild(el('h2',null,l.title||'Casa'));
-      head.appendChild(el('p','zone',[l.zone,l.type].filter(Boolean).join(' · ')));
+      var f=fit(l),c=el('article','card '+f),pills=el('div','pills'),nv=nextVisit(l.id);
+      pills.appendChild(el('span','pill '+f,L[f]));
+      if(isNew(l))pills.appendChild(el('span','pill new',L.isNew));
+      if(liked(l.id))pills.appendChild(el('span','pill liked',L.liked));
+      if(nv)pills.appendChild(el('span','pill visit',L.visit+': '+fmtWhen(nv.when)));
+      var head=el('div'); head.appendChild(pills);
+      head.appendChild(el('h3',null,tr(l,'title')||'—'));
+      head.appendChild(el('p','zone',[tr(l,'zone'),tr(l,'type')].filter(Boolean).join(' · ')));
       c.appendChild(head);
-      c.appendChild(el('p','price',l.price!=null?eur(l.price):'Prezzo su richiesta'));
+      var pb=el('div'); pb.appendChild(el('p','price',l.price!=null?eur(l.price):L.priceNA));
+      var ph=Array.isArray(l.priceHistory)?l.priceHistory:[], prev=ph.length>1?ph[ph.length-2]:null;
+      if(prev&&prev.price!==l.price){var op=el('p','oldprice');op.appendChild(document.createTextNode(L.was+' '));op.appendChild(el('s',null,eur(prev.price)));if(ph[ph.length-1].date)op.appendChild(document.createTextNode(', '+L.changed+' '+fmtDay(ph[ph.length-1].date)));pb.appendChild(op);}
+      c.appendChild(pb);
       var chips=el('div','chips');
       checks(l).forEach(function(x){var s=el('span','chip '+x.st);s.appendChild(el('i',null,MARK[x.st]));s.appendChild(document.createTextNode(x.text));chips.appendChild(s);});
       c.appendChild(chips);
-      if(l.note)c.appendChild(el('p','note',l.note));
+      var note=tr(l,'note'); if(note)c.appendChild(el('p','note',note));
+      var qs=tr(l,'questions');
+      if(Array.isArray(qs)&&qs.length){c.appendChild(el('p','qs-t',L.ask));var ol=el('ol','qs');qs.forEach(function(q){ol.appendChild(el('li',null,q));});c.appendChild(ol);}
       var links=el('div','links');
-      (l.sources||[]).forEach(function(s,i){
-        var u=safe(s.url); if(!u)return;
-        var a=el('a','btn'+(i?' alt':''),(i?'Apri anche su ':"Apri l'annuncio · ")+(s.name||'sito'));
-        a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.appendChild(a);
-      });
+      (l.sources||[]).forEach(function(s,i){var u=safe(s.url);if(!u)return;var a=el('a','btn'+(i?' alt':''),(i?L.openAlso:L.open)+(s.name||''));a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.appendChild(a);});
       c.appendChild(links);
-      if(l.firstSeen)c.appendChild(el('p','seen','visto la prima volta il '+new Intl.DateTimeFormat('it-IT',{day:'numeric',month:'long'}).format(new Date(l.firstSeen))));
+      if(l.firstSeen)c.appendChild(el('p','seen',L.seen+' '+fmtDay(l.firstSeen)));
       list.appendChild(c);
     });
-  }).catch(function(){document.getElementById('upd').textContent='Non riesco a caricare la lista. Riprova tra qualche minuto.';});
+  }
+  function render(){renderStatic();renderVisits();renderList();}
+  [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.addEventListener('click',function(){lang=b.getAttribute('data-lang');try{localStorage.setItem('lang',lang);}catch(e){}render();});});
+  render();
+  fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){data=d;render();})
+    .catch(function(){document.getElementById('upd').textContent=t().err;});
 })();
 </script>
 </body>
