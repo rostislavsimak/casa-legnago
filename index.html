@@ -127,8 +127,8 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
     add(l.bathrooms==null?null:l.bathrooms>=1, l.bathrooms==null?L.bathNA:L.bath(l.bathrooms));
     add(l.garage==null?null:!!l.garage, l.garage==null?L.garageNA:(l.garage?L.garage:L.noGarage));
     add(l.storage==null?null:!!l.storage, l.storage==null?L.storeNA:(l.storage?L.store:L.noStore));
-    var e=l.energy?String(l.energy).toUpperCase():null;
-    add(e==null?null:OK_CLASS.indexOf(e)>=0, e==null?L.classNA:L.cls+' '+e);
+    var e=l.energy?String(l.energy).toUpperCase().replace(/\s+/g,''):null;
+    add(e==null?null:(/^A/.test(e)||e==='B'||e==='C'), e==null?L.classNA:L.cls+' '+e);
     add(l.driveMin==null?null:l.driveMin<=10, l.driveMin==null?L.distNA:L.dist(l.driveMin));
     if(l.renovate===true)add(false,L.reno);
     return c;

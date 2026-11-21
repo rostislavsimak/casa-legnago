@@ -1181,46 +1181,6 @@
    }
   },
   {
-   "id": "readyhouse-castelnovo-bariano-95",
-   "price": 95000,
-   "sqm": 197,
-   "bedrooms": 3,
-   "bathrooms": 2,
-   "garage": null,
-   "storage": true,
-   "energy": null,
-   "driveMin": 10,
-   "firstSeen": "2026-11-21",
-   "sources": [
-    {
-     "name": "Immobiliare.it (Ready House)",
-     "url": "https://www.immobiliare.it/annunci/128846332/"
-    },
-    {
-     "name": "Casa.it (Ready House)",
-     "url": "https://www.casa.it/immobili/53925214/"
-    }
-   ],
-   "priceHistory": [
-    {
-     "date": "2026-11-21",
-     "price": 95000
-    }
-   ],
-   "questions": [],
-   "title": "Casa con grande giardino, Castelnovo Bariano",
-   "type": "Casa indipendente",
-   "zone": "Castelnovo Bariano (RO)",
-   "note": "Casa del 1950 su due livelli con giardino di circa 1.350 m²: 3 camere, studio, 2 bagni, taverna con camino e cantina. Il garage è un deposito usato come garage; una parte della casa è abitata: chiedere da chi, e la classe energetica.",
-   "uk": {
-    "title": "Будинок з великим садом, Кастельново-Баріано",
-    "type": "Окремий будинок",
-    "zone": "Кастельново-Баріано (провінція Ровіго)",
-    "note": "Будинок 1950 року на два рівні, сад близько 1 350 м²: 3 спальні, кабінет, 2 ванні кімнати, таверна з каміном і підвал. Гараж — це склад, який використовують як гараж; в одній частині будинку зараз живуть люди: треба запитати хто, а також енергетичний клас.",
-    "questions": []
-   }
-  },
-  {
    "id": "sogno-14v-terrazzo-villetta-153",
    "price": 153000,
    "sqm": 200,
