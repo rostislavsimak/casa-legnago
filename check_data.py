@@ -56,6 +56,8 @@ for i, l in enumerate(ls):
                 errors.append(f"{tag}: manca uk.{k}")
         if l.get("questions") and len(uk.get("questions") or []) != len(l["questions"]):
             errors.append(f"{tag}: uk.questions deve avere lo stesso numero di domande dell'italiano")
+    if l.get("published") is not None and not iso(l.get("published")):
+        errors.append(f"{tag}: published deve essere una data ISO o null")
     if "questions" in l and not isinstance(l["questions"], list):
         errors.append(f"{tag}: questions deve essere una lista")
     ph = l.get("priceHistory", [])

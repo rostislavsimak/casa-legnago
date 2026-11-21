@@ -61,6 +61,10 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
 .btn{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:20px;border-radius:12px;padding:14px 16px}
 .btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
 .links{display:flex;flex-direction:column;gap:8px}
+.sortbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0 16px}
+.sortbar span{color:var(--muted);font-weight:600}
+.sortbar button{font-family:inherit;font-weight:700;font-size:17px;padding:10px 14px;border-radius:10px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.sortbar button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .empty{text-align:center;color:var(--muted);padding:40px 10px}
 </style>
 </head>
@@ -75,6 +79,7 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
   <p class="help" id="t-help"></p>
   <div class="legend" id="legend"></div>
   <div id="visits"></div>
+  <div class="sortbar" id="sortbar"></div>
   <div id="list"></div>
 </div>
 <script>
@@ -92,7 +97,8 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
       open:"Apri l'annuncio · ",openAlso:'Apri anche su ',seen:'visto la prima volta il',ask:'Da chiedere in visita',
       next:'Prossime visite',noVisits:'Nessuna visita in programma.',evalTitle:'In valutazione',done:'Visite fatte',
       discarded:'scartata',pending:'esito da segnare',empty:'Nessuna casa in lista in questo momento.',
-      err:'Non riesco a caricare la lista. Riprova tra qualche minuto.',locale:'it-IT'},
+      err:'Non riesco a caricare la lista. Riprova tra qualche minuto.',locale:'it-IT',
+      sortBy:'Ordina:',sFit:'Più adatte',sPrice:'Prezzo più basso',sNew:'Più recenti',pub:'Data annuncio:',pubNA:'Data annuncio non indicata',found:'trovato da noi il'},
     uk:{title:'Будинки, які ми розглядаємо',updated:'Оновлено',loading:'Завантаження…',
       help:'Найкращі варіанти — на початку списку. Натисніть «Відкрити оголошення», щоб побачити фото та деталі.',
       ok:'підходить',no:'не підходить',unk:'треба уточнити',
@@ -106,15 +112,19 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
       open:'Відкрити оголошення · ',openAlso:'Відкрити також на ',seen:'вперше побачено',ask:'Що запитати під час перегляду',
       next:'Найближчі перегляди',noVisits:'Запланованих переглядів немає.',evalTitle:'Розглядаємо',done:'Проведені перегляди',
       discarded:'відхилено',pending:'результат ще не відомо',empty:'Зараз у списку немає будинків.',
-      err:'Не вдається завантажити список. Спробуйте за кілька хвилин.',locale:'uk-UA'}
+      err:'Не вдається завантажити список. Спробуйте за кілька хвилин.',locale:'uk-UA',
+      sortBy:'Сортувати:',sFit:'Найкращі',sPrice:'Найдешевші',sNew:'Найновіші',pub:'Дата оголошення:',pubNA:'Дата оголошення не вказана',found:'ми знайшли'}
   };
   var OK_CLASS=['A4','A3','A2','A1','A','B','C'], RANK={match:0,verify:1,near:2,miss:3}, MARK={ok:'✓',no:'✗',unk:'?'}, PAST_MS=2*3600*1000;
-  var lang='it', data=null;
+  var lang='it', data=null, sortMode='fit';
+  try{ var sm=localStorage.getItem('sort'); if(sm==='fit'||sm==='price'||sm==='new') sortMode=sm; }catch(e){}
+  function pubTime(l){ if(l.published) return new Date(l.published).getTime(); return l.firstSeen ? new Date(l.firstSeen).getTime()-1e13 : -2e13; }
   try{ var q=new URLSearchParams(location.search).get('lang'); if(q==='uk'||q==='it') lang=q; else { var s=localStorage.getItem('lang'); if(s==='uk'||s==='it') lang=s; } }catch(e){}
   function t(){return T[lang];}
   function tr(o,k){ return (lang==='uk' && o.uk && o.uk[k]) ? o.uk[k] : o[k]; }
   function eur(n){return new Intl.NumberFormat(t().locale,{style:'currency',currency:'EUR',currencyDisplay:'narrowSymbol',maximumFractionDigits:0}).format(n);}
   function fmtWhen(w){return new Intl.DateTimeFormat(t().locale,{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Rome'}).format(new Date(w));}
+  function fmtDayY(d){return new Intl.DateTimeFormat(t().locale,{day:'numeric',month:'long',year:'numeric'}).format(new Date(d));}
   function fmtDay(d){return new Intl.DateTimeFormat(t().locale,{day:'numeric',month:'long'}).format(new Date(d));}
   function el(tag,cls,txt){var n=document.createElement(tag);if(cls)n.className=cls;if(txt!=null)n.textContent=txt;return n;}
   function safe(u){return typeof u==='string'&&/^https:\/\//.test(u)?u:null;}
@@ -174,7 +184,18 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
   }
   function renderList(){
     var L=t(),list=document.getElementById('list'); list.textContent=''; if(!data)return;
-    var rows=(data.listings||[]).slice().sort(function(a,b){return RANK[fit(a)]-RANK[fit(b)]||(a.price||1e12)-(b.price||1e12);});
+    var rows=(data.listings||[]).slice().sort(function(a,b){
+      var pa=a.price==null?1e12:a.price, pb=b.price==null?1e12:b.price;
+      if(sortMode==='price') return pa-pb || RANK[fit(a)]-RANK[fit(b)];
+      if(sortMode==='new') return pubTime(b)-pubTime(a) || RANK[fit(a)]-RANK[fit(b)];
+      return RANK[fit(a)]-RANK[fit(b)] || pa-pb;
+    });
+    var sb=document.getElementById('sortbar'); sb.textContent=''; sb.appendChild(el('span',null,L.sortBy));
+    [['fit',L.sFit],['price',L.sPrice],['new',L.sNew]].forEach(function(o){
+      var b=el('button',null,o[1]); b.type='button'; b.setAttribute('aria-pressed',String(sortMode===o[0]));
+      b.addEventListener('click',function(){sortMode=o[0];try{localStorage.setItem('sort',sortMode);}catch(e){}renderList();});
+      sb.appendChild(b);
+    });
     if(!rows.length){list.appendChild(el('div','empty',L.empty));return;}
     rows.forEach(function(l){
       var f=fit(l),c=el('article','card '+f),pills=el('div','pills'),nv=nextVisit(l.id);
@@ -199,7 +220,7 @@ h3{font-size:22px;line-height:1.25;margin:4px 0 2px}
       var links=el('div','links');
       (l.sources||[]).forEach(function(s,i){var u=safe(s.url);if(!u)return;var a=el('a','btn'+(i?' alt':''),(i?L.openAlso:L.open)+(s.name||''));a.href=u;a.target='_blank';a.rel='noopener noreferrer';links.appendChild(a);});
       c.appendChild(links);
-      if(l.firstSeen)c.appendChild(el('p','seen',L.seen+' '+fmtDay(l.firstSeen)));
+      c.appendChild(el('p','seen',(l.published?L.pub+' '+fmtDayY(l.published):L.pubNA)+(l.firstSeen?' · '+L.found+' '+fmtDay(l.firstSeen):'')));
       list.appendChild(c);
     });
   }
