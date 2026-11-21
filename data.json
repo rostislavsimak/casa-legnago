@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T13:55:00+01:00",
+ "updated": "2026-11-21T18:29:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -377,6 +377,42 @@
    }
   },
   {
+   "id": "casait-54636136-villa-bartolomea-259",
+   "price": 259000,
+   "sqm": 200,
+   "bedrooms": 4,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": null,
+   "energy": "F",
+   "driveMin": 11,
+   "firstSeen": "2026-11-21",
+   "sources": [
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/54636136/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-21",
+     "price": 259000
+    }
+   ],
+   "questions": [],
+   "title": "Casa indipendente ristrutturata, Villa Bartolomea",
+   "type": "Casa indipendente",
+   "zone": "Villa Bartolomea centro",
+   "note": "Casa su due piani rinnovata da poco: 4 camere, 2 bagni, garage doppio, taverna e giardino di oltre 1.000 m². Classe energetica F (consuma parecchio). Da chiedere se c'è una cantina o un ripostiglio e cosa è stato rifatto.",
+   "uk": {
+    "title": "Окремий будинок після ремонту, Вілла-Бартоломеа",
+    "zone": "Центр Вілла-Бартоломеа",
+    "type": "Окремий будинок",
+    "note": "Двоповерховий будинок, нещодавно оновлений: 4 спальні, 2 ванні кімнати, гараж на дві машини, таверна (підвальна кімната для відпочинку) і сад понад 1 000 м². Енергетичний клас F (споживає багато енергії). Треба запитати, чи є підвал або комора і що саме ремонтували.",
+    "questions": []
+   }
+  },
+  {
    "id": "casait-54693411-attico-porto",
    "price": 259000,
    "sqm": 245,
@@ -683,6 +719,42 @@
     "type": "Окрема вілла",
     "zone": "Сан-Віто",
     "note": "Окремий двоповерховий будинок, 4 подружні спальні, 2 ванні кімнати, кухня, двір 620 м², гараж і 2 місця для авто, майстерня 170 м². Добрий стан, але енергетичний клас G (великі витрати на опалення). Оголошення з червня 2026 року: перевірити, чи ще продається."
+   }
+  },
+  {
+   "id": "immobiliare-130739046-canove-plurifamiliare",
+   "price": 239000,
+   "sqm": 286,
+   "bedrooms": 4,
+   "bathrooms": 3,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 6,
+   "firstSeen": "2026-11-21",
+   "sources": [
+    {
+     "name": "Immobiliare.it",
+     "url": "https://www.immobiliare.it/annunci/130739046/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-21",
+     "price": 239000
+    }
+   ],
+   "questions": [],
+   "title": "Casa con due abitazioni e terreno, Canove",
+   "type": "Casa con due unità",
+   "zone": "Canove (Legnago)",
+   "note": "Due abitazioni indipendenti nello stesso lotto: una di circa 143 m² rinnovata da poco e una di 83 m², con 2 garage, cantina e circa 2.000 m² di terreno. Da chiedere la classe energetica e quante camere ha la casa principale.",
+   "uk": {
+    "title": "Будинок із двома житлами та ділянкою, Канове",
+    "zone": "Канове (Леньяго)",
+    "type": "Будинок на два житла",
+    "note": "Два окремі житла на одній ділянці: одне близько 143 м², нещодавно оновлене, і друге 83 м², 2 гаражі, підвал і близько 2 000 м² землі. Треба запитати енергетичний клас і скільки спалень в основному будинку.",
+    "questions": []
    }
   },
   {
