@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T08:26:00+01:00",
+ "updated": "2026-11-22T13:26:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -757,6 +757,10 @@
     {
      "name": "Immobiliare.it",
      "url": "https://www.immobiliare.it/annunci/130739046/"
+    },
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/54368462/"
     }
    ],
    "priceHistory": [
@@ -775,6 +779,43 @@
     "zone": "Канове (Леньяго)",
     "type": "Будинок на два житла",
     "note": "Два окремі житла на одній ділянці: одне близько 143 м², нещодавно оновлене, і друге 83 м², 2 гаражі, підвал і близько 2 000 м² землі. Треба запитати енергетичний клас і скільки спалень в основному будинку.",
+    "questions": []
+   }
+  },
+  {
+   "id": "immobiliare-130867102-begosso",
+   "price": 220000,
+   "sqm": 334,
+   "bedrooms": 3,
+   "bathrooms": 1,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 10,
+   "firstSeen": "2026-11-22",
+   "published": "2026-07-13",
+   "sources": [
+    {
+     "name": "Immobiliare.it (privato)",
+     "url": "https://www.immobiliare.it/annunci/130867102/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-22",
+     "price": 220000
+    }
+   ],
+   "questions": [],
+   "title": "Casa indipendente con grande giardino, Begosso",
+   "type": "Casa indipendente",
+   "zone": "Begosso (Terrazzo)",
+   "note": "Casa di un privato, ristrutturata nel 2006 e abitata dai proprietari: 3 camere, 1 bagno (un secondo bagno da finire), cantina, ripostigli, garage per 2 auto e un giardino di oltre 5.000 m². È molto grande (334 m²); chiedere la classe energetica e se è ancora in vendita.",
+   "uk": {
+    "title": "Окремий будинок з великим садом, Бегоссо",
+    "zone": "Бегоссо (Террацко)",
+    "type": "Окремий будинок",
+    "note": "Будинок від приватного власника, відремонтований у 2006 році, власники зараз там живуть: 3 спальні, 1 ванна кімната (друга ванна не закінчена), підвал, комори, гараж на 2 машини і сад понад 5 000 м². Будинок дуже великий (334 м²); треба запитати енергетичний клас і чи він ще продається.",
     "questions": []
    }
   },
@@ -1182,7 +1223,7 @@
    "bathrooms": 2,
    "garage": true,
    "storage": true,
-   "energy": null,
+   "energy": "E",
    "driveMin": 3,
    "firstSeen": "2026-11-21",
    "published": "2026-11-03",
@@ -1190,6 +1231,14 @@
     {
      "name": "Immobiliare.it (Il Quadrifoglio)",
      "url": "https://www.immobiliare.it/annunci/127056361/"
+    },
+    {
+     "name": "Il Quadrifoglio rif. 932",
+     "url": "https://ilquadrifoglioimmobiliare.com/immobili/scheda.aspx?idI=11037"
+    },
+    {
+     "name": "Immobiliare.it (privato, 172.000)",
+     "url": "https://www.immobiliare.it/annunci/134082015/"
     }
    ],
    "priceHistory": [
@@ -1202,12 +1251,12 @@
    "title": "Appartamento in palazzo storico, Porto",
    "type": "Appartamento",
    "zone": "Porto di Legnago, centro storico",
-   "note": "Grande appartamento al primo piano di un palazzo storico nel centro di Porto, con tetto e facciate rifatti: 3 camere (una con bagno privato), 2 bagni, soggiorno con camino, garage e cantina. Senza ascensore e classe energetica non indicata; chiedere se oggi è affittato.",
+   "note": "Grande appartamento al primo piano di un palazzo storico nel centro di Porto, con tetto e facciate rifatti: 3 camere (una con bagno privato), 2 bagni, soggiorno con camino, garage e cantina. Classe energetica E e senza ascensore; il prezzo cambia da un annuncio all'altro (165.000-172.000): chiedere il prezzo giusto e se oggi è affittato.",
    "uk": {
     "title": "Квартира в історичному будинку, Порто",
     "type": "Квартира",
     "zone": "Порто-ді-Леньяго, історичний центр",
-    "note": "Велика квартира на першому поверсі історичного будинку в центрі Порто, дах і фасади оновлені: 3 спальні (одна з власною ванною), 2 ванні кімнати, вітальня з каміном, гараж і підвал. Ліфта немає, енергетичний клас не вказаний; треба запитати, чи зараз вона здається в оренду.",
+    "note": "Велика квартира на першому поверсі історичного будинку в центрі Порто, дах і фасади оновлені: 3 спальні (одна з власною ванною), 2 ванні кімнати, вітальня з каміном, гараж і підвал. Енергетичний клас E, ліфта немає; ціна в різних оголошеннях різна (165 000–172 000): треба уточнити ціну і чи зараз квартира здається в оренду.",
     "questions": []
    }
   },
