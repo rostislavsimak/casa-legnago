@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T13:26:00+01:00",
+ "updated": "2026-11-22T18:40:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -965,6 +965,80 @@
     "type": "Вілла",
     "zone": "Казетте (Леньяго)",
     "note": "Будинок 1967 року, 230 м² на двох поверхах: 4 спальні, 2 ванні кімнати, гараж, підвал і сад. Зараз там живуть дві сім’ї: треба спитати, чи він буде вільний при продажу. Ціна та енергоклас не вказані.",
+    "questions": []
+   }
+  },
+  {
+   "id": "immobiliare-134929533-cerea-monte-carega-140",
+   "price": 140000,
+   "sqm": 145,
+   "bedrooms": 2,
+   "bathrooms": 1,
+   "garage": null,
+   "storage": null,
+   "energy": null,
+   "driveMin": 11,
+   "firstSeen": "2026-11-22",
+   "published": "2026-11-20",
+   "sources": [
+    {
+     "name": "Immobiliare.it (Primacasa Cerea)",
+     "url": "https://www.immobiliare.it/annunci/134929533/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-22",
+     "price": 140000
+    }
+   ],
+   "questions": [],
+   "title": "Casa unifamiliare, Via Monte Carega (Cerea)",
+   "type": "Casa unifamiliare",
+   "zone": "Cerea centro",
+   "note": "Casa degli anni '60 parzialmente ristrutturata, su due piani, con 2 camere e 1 bagno. Da chiedere: se c'è un vero garage, se c'è una cantina e la classe energetica.",
+   "uk": {
+    "title": "Окремий будинок, вул. Монте Карега (Череа)",
+    "type": "Окремий будинок",
+    "zone": "Центр Череа",
+    "note": "Будинок 1960-х років, частково відремонтований, на двох поверхах, 2 спальні та 1 ванна кімната. Треба запитати: чи є справжній гараж, чи є підвал і який енергетичний клас.",
+    "questions": []
+   }
+  },
+  {
+   "id": "immobiliare-134947077-cerea-monte-carega-185",
+   "price": 185000,
+   "sqm": 200,
+   "bedrooms": null,
+   "bathrooms": 2,
+   "garage": null,
+   "storage": true,
+   "energy": null,
+   "driveMin": 11,
+   "firstSeen": "2026-11-22",
+   "published": "2026-11-20",
+   "sources": [
+    {
+     "name": "Immobiliare.it (Primacasa Cerea)",
+     "url": "https://www.immobiliare.it/annunci/134947077/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-22",
+     "price": 185000
+    }
+   ],
+   "questions": [],
+   "title": "Villa ristrutturata, Via Monte Carega (Cerea)",
+   "type": "Villa unifamiliare",
+   "zone": "Cerea centro",
+   "note": "Villa degli anni '80 ristrutturata nel 2010, su due livelli, con 2 bagni, ripostigli e un laboratorio di 53 m². Da chiedere: quante camere ci sono (l'annuncio dice 2 o 4), se il posto auto è un garage chiuso e la classe energetica.",
+   "uk": {
+    "title": "Відремонтована вілла, вул. Монте Карега (Череа)",
+    "type": "Окрема вілла",
+    "zone": "Центр Череа",
+    "note": "Вілла 1980-х років, відремонтована у 2010 році, на двох рівнях, 2 ванні кімнати, комори та майстерня 53 м². Треба запитати: скільки спалень (в оголошенні 2 або 4), чи місце для авто є закритим гаражем, і який енергетичний клас.",
     "questions": []
    }
   },
