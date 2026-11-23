@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T18:40:00+01:00",
+ "updated": "2026-11-23T08:27:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -320,7 +320,7 @@
    "bathrooms": null,
    "garage": true,
    "storage": null,
-   "energy": null,
+   "energy": "G",
    "driveMin": 5,
    "firstSeen": "2026-11-21",
    "published": "2026-04-27",
@@ -328,6 +328,10 @@
     {
      "name": "Casa Cerea",
      "url": "https://casacerea.it/bifamiliare-completa-in-centro-a-vangadizza/"
+    },
+    {
+     "name": "Immobiliare.it (Casacerea, Via Rossini 87)",
+     "url": "https://www.immobiliare.it/annunci/120263156/"
     }
    ],
    "priceHistory": [
@@ -340,12 +344,12 @@
    "title": "Bifamiliare intera (due appartamenti)",
    "type": "Bifamiliare",
    "zone": "Vangadizza (Legnago)",
-   "note": "Si vende tutto l'edificio: due appartamenti indipendenti da circa 145 m² ciascuno, 3 camere ognuno, autorimessa, abitabile. Da chiedere se si può comprare un solo appartamento, bagni, cantina e classe. Annuncio pubblicato nel 2025.",
+   "note": "Si vende tutto l'edificio: due appartamenti indipendenti da circa 145 m² ciascuno, 3 camere ognuno, autorimessa, abitabile. Su un altro portale la classe energetica risulta G (la peggiore). Da chiedere se si può comprare un solo appartamento, bagni e cantina. Annuncio pubblicato nel 2025.",
    "uk": {
     "title": "Цілий двоквартирний будинок (дві квартири)",
     "type": "Двоквартирний будинок",
     "zone": "Вангадицца (Леньяго)",
-    "note": "Продається весь будинок: дві окремі квартири приблизно по 145 м², у кожній 3 спальні, гараж, можна жити одразу. Треба спитати, чи можна купити тільки одну квартиру, а також про ванні, підвал і енергоклас. Оголошення 2025 року.",
+    "note": "Продається весь будинок: дві окремі квартири приблизно по 145 м², у кожній 3 спальні, гараж, можна жити одразу. На іншому сайті енергоклас указано G (найгірший). Треба спитати, чи можна купити тільки одну квартиру, а також про ванні та підвал. Оголошення 2025 року.",
     "questions": []
    }
   },
@@ -383,6 +387,43 @@
     "type": "Окремий будинок",
     "zone": "Леньяго, приблизно 2 км від центру",
     "note": "Новий двоповерховий будинок: 3 спальні, 2 ванні кімнати, комора, подвійний гараж, тераса, енергоклас A. Оголошення старе і без справжніх фото: треба спитати, чи він ще продається, на якій вулиці і коли здача.",
+    "questions": []
+   }
+  },
+  {
+   "id": "casait-53323353-terrazzo-casette",
+   "price": 170000,
+   "sqm": 255,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": null,
+   "storage": null,
+   "energy": null,
+   "driveMin": 11,
+   "firstSeen": "2026-11-23",
+   "published": "2026-11-10",
+   "sources": [
+    {
+     "name": "Casa.it (IdeaCasa)",
+     "url": "https://www.casa.it/immobili/53323353/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-23",
+     "price": 170000
+    }
+   ],
+   "questions": [],
+   "title": "Casa singola a Terrazzo",
+   "type": "Casa indipendente",
+   "zone": "Terrazzo centro",
+   "note": "Casa singola del 1980, abitabile: soggiorno open space, stanza in più e bagno al piano terra, 3 camere matrimoniali e secondo bagno al primo piano, ampio spazio esterno. L'annuncio non parla di garage né di cantina: da chiedere, insieme alla classe energetica.",
+   "uk": {
+    "title": "Окремий будинок у Терраццо",
+    "type": "Окремий будинок",
+    "zone": "Терраццо, центр",
+    "note": "Окремий будинок 1980 року, можна жити: відкрита вітальня, додаткова кімната і ванна на першому поверсі, 3 великі спальні і друга ванна на другому поверсі, велика ділянка надворі. В оголошенні нічого не сказано про гараж і підвал: треба спитати, а також про енергоклас.",
     "questions": []
    }
   },
@@ -457,6 +498,43 @@
     "type": "Квартира (пентхаус)",
     "zone": "Порто-ді-Леньяго",
     "note": "Останній поверх на двох рівнях з ліфтом, 245 м², 3 подружні спальні, 3 ванні кімнати і тераси; ремонт 2014 року, подвійний гараж і підвал, клас C. Треба запитати про внески за будинок і стан будинку.",
+    "questions": []
+   }
+  },
+  {
+   "id": "casait-55183882-canove-ocara",
+   "price": 110000,
+   "sqm": 255,
+   "bedrooms": 4,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 6,
+   "firstSeen": "2026-11-23",
+   "published": "2026-11-11",
+   "sources": [
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/55183882/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-23",
+     "price": 110000
+    }
+   ],
+   "questions": [],
+   "title": "Casa singola a Canove",
+   "type": "Casa indipendente",
+   "zone": "Canove (Legnago)",
+   "note": "Casa singola del 1967 su due piani, vicino all'argine dell'Adige: 4 camere, 2 bagni, grande taverna con cucina, cantina, garage e magazzino, cortile recintato. Abitabile ma con finiture d'epoca: chiedere classe energetica e stato di tetto e impianti. È più grande di quanto serve (255 m²).",
+   "uk": {
+    "title": "Окремий будинок у Канове",
+    "type": "Окремий будинок",
+    "zone": "Канове (Леньяго)",
+    "note": "Окремий будинок 1967 року на два поверхи, біля дамби річки Адідже: 4 спальні, 2 ванні, велика таверна з кухнею, підвал, гараж і склад, огороджене подвір'я. Можна жити, але оздоблення старе: треба спитати енергоклас і стан даху та комунікацій. Будинок більший, ніж потрібно (255 м²).",
     "questions": []
    }
   },
@@ -548,6 +626,10 @@
     {
      "name": "Casa Cerea",
      "url": "https://casacerea.it/casa-singola-a-cerea-2/"
+    },
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/55153868/"
     }
    ],
    "priceHistory": [],
@@ -839,6 +921,10 @@
     {
      "name": "Sogno Immobiliare",
      "url": "https://www.sognoimmobiliare.it/property/casa-indipendente/"
+    },
+    {
+     "name": "Casa.it (GMP Immobiliare)",
+     "url": "https://www.casa.it/immobili/54946345/"
     }
    ],
    "priceHistory": [
