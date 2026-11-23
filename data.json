@@ -1447,16 +1447,33 @@
     }
    ],
    "priceHistory": [],
-   "questions": [],
+   "questions": [
+    "Dove si trova esattamente la casa (Vigo, Via Marchesa o Via Savonarola)? Quando possiamo vederla dentro?",
+    "La casa è abitata: da chi, e da quando sarebbe libera al rogito?",
+    "Una delle tre camere è matrimoniale? Che misure hanno le camere? Possiamo avere la planimetria?",
+    "Confermate i metri: 145 calpestabili, 160 commerciali? Cosa comprendono i 170 totali?",
+    "Quanto è grande il garage doppio e dov'è il ripostiglio? C'è spazio per una cantina o un deposito?",
+    "Ci sono spese del residence (parti comuni, giardino, cancello)? Quanto al mese?",
+    "Il prezzo di 285.000 è trattabile? Cosa resta nella casa (climatizzatori, cucina, arredi)?"
+   ],
    "title": "Villa bifamiliare in residence, Vigo",
    "type": "Villa bifamiliare",
    "zone": "Vigo (Legnago)",
-   "note": "Costruita nel 2022, due livelli, 3 camere al primo piano, 2 bagni, garage doppio più posto auto, ripostiglio, giardino di 100 m², climatizzata, classe B.",
+   "note": "Costruita nel 2022, due livelli, 3 camere al primo piano, 2 bagni, garage doppio più posto auto, ripostiglio, giardino di 100 m², climatizzata, classe B. Attualmente abitata: da chiedere quando sarebbe libera. L'indirizzo esatto è da confermare.",
    "uk": {
     "title": "Двоквартирна вілла в житловому комплексі, Віго",
     "type": "Двоквартирна вілла",
     "zone": "Віго (Леньяго)",
-    "note": "Побудована у 2022 році, два поверхи, 3 спальні нагорі, 2 ванні кімнати, подвійний гараж і місце для авто, комора, сад 100 м², кондиціонери, клас B."
+    "note": "Побудована у 2022 році, два поверхи, 3 спальні нагорі, 2 ванні кімнати, подвійний гараж і місце для авто, комора, сад 100 м², кондиціонери, клас B. Зараз у будинку живуть: треба спитати, коли він звільниться. Точну адресу треба уточнити.",
+    "questions": [
+     "Де саме знаходиться будинок (Віго, вул. Маркеза чи вул. Савонарола)? Коли можна подивитися всередині?",
+     "У будинку живуть: хто, і коли він буде вільний до підписання договору?",
+     "Чи є серед трьох кімнат подружня спальня? Які розміри кімнат? Чи можна отримати план?",
+     "Підтвердіть площу: 145 м² житлової, 160 м² загальної? Що входить у 170 м²?",
+     "Якого розміру подвійний гараж і де комора? Чи є місце для підвалу чи складу?",
+     "Чи є внески за житловий комплекс (спільні частини, сад, ворота)? Скільки на місяць?",
+     "Чи можна торгуватися щодо ціни 285 000? Що залишається в будинку (кондиціонери, кухня, меблі)?"
+    ]
    }
   },
   {
@@ -1656,6 +1673,20 @@
    "uk": {
     "title": "Вілла, вул. Альмеріні 47 — зустріч з інженерним бюро",
     "zone": "Бюро Де Берті, вул. Діаз 1"
+   }
+  },
+  {
+   "id": "quadrifoglio-957-agenzia-2026-11-24",
+   "listingId": "quadrifoglio-957-vigo",
+   "title": "Villa bifamiliare rif. 957 — appuntamento in agenzia",
+   "zone": "Agenzia Il Quadrifoglio, Via Savonarola 3",
+   "price": 285000,
+   "when": "2026-11-24T09:00:00+01:00",
+   "outcome": null,
+   "outcomeNote": null,
+   "uk": {
+    "title": "Двоквартирна вілла (номер 957) — зустріч у агентстві",
+    "zone": "Агентство Іль Квадріфольо, вул. Савонарола 3"
    }
   }
  ]
