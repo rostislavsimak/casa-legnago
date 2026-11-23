@@ -32,12 +32,12 @@
    "title": "Villa in Via Almerini 47",
    "type": "Villa",
    "zone": "Casette (Legnago)",
-   "note": "Dal testo: unità in costruzione in contesto bifamiliare, 3 camere, 2 bagni (uno cieco), ripostiglio, garage per una sola vettura, giardino 100 m², fotovoltaico. Zona Casette indicata nel testo, il portale dice Centro. Il portale la dà anche come abitabile: chiedere stato lavori e consegna.",
+   "note": "Dal testo: unità in costruzione in contesto bifamiliare, 3 camere, 2 bagni (uno cieco), ripostiglio, garage per una sola vettura, giardino 100 m², fotovoltaico. Zona Casette indicata nel testo, il portale dice Centro. Visitata il 23/11: ci è piaciuta. È ancora al grezzo, fine lavori prevista per maggio 2027.",
    "uk": {
     "title": "Вілла, вул. Альмеріні 47",
     "type": "Вілла",
     "zone": "Казетте (Леньяго)",
-    "note": "Будинок ще будується, у складі двоквартирного будинку: 3 спальні, 2 ванні кімнати (одна без вікна), комора, гараж на одну машину, сад 100 м², сонячні панелі. Треба уточнити, на якій стадії будівництво і коли здача.",
+    "note": "З опису: житло будується, у двоквартирному будинку, 3 спальні, 2 ванні (одна без вікна), комора, гараж на одну машину, сад 100 м², сонячні панелі. У тексті вказано район Казетте, портал пише Центр. Оглянули 23/11: нам сподобалося. Будинок ще без оздоблення, завершення робіт заплановано на травень 2027.",
     "questions": [
      "На якій стадії будівництво і коли здача? Чи є письмова неустойка за затримку?",
      "Гараж справді лише на одну машину? Які його розміри? Чи є ще одне місце для авто надворі?",
@@ -1668,11 +1668,12 @@
    "zone": "Studio De Berti, Via Diaz 1",
    "price": 275000,
    "when": "2026-11-23T16:00:00+01:00",
-   "outcome": null,
-   "outcomeNote": null,
+   "outcome": "liked",
+   "outcomeNote": "Visita fatta, ci è piaciuta. La casa è ancora al grezzo, in costruzione: fine lavori prevista per maggio 2027.",
    "uk": {
     "title": "Вілла, вул. Альмеріні 47 — зустріч з інженерним бюро",
-    "zone": "Бюро Де Берті, вул. Діаз 1"
+    "zone": "Бюро Де Берті, вул. Діаз 1",
+    "outcomeNote": "Огляд відбувся, нам сподобалося. Будинок ще без оздоблення, будується: завершення робіт заплановано на травень 2027."
    }
   },
   {
@@ -1681,7 +1682,7 @@
    "title": "Villa bifamiliare rif. 957 — appuntamento in agenzia",
    "zone": "Agenzia Il Quadrifoglio, Via Savonarola 3",
    "price": 285000,
-   "when": "2026-11-24T09:00:00+01:00",
+   "when": "2026-11-24T15:30:00+01:00",
    "outcome": null,
    "outcomeNote": null,
    "uk": {
