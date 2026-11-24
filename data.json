@@ -1,8 +1,11 @@
 {
- "updated": "2026-11-23T18:21:00+01:00",
+ "updated": "2026-11-24T08:33:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
+   "title": "Villa in Via Almerini 47",
+   "type": "Villa",
+   "zone": "Casette (Legnago)",
    "price": 275000,
    "sqm": 147,
    "bedrooms": 3,
@@ -13,6 +16,7 @@
    "driveMin": 4,
    "firstSeen": "2026-11-19",
    "published": null,
+   "note": "Dal testo: unità in costruzione in contesto bifamiliare, 3 camere, 2 bagni (uno cieco), ripostiglio, garage per una sola vettura, giardino 100 m², fotovoltaico. Zona Casette indicata nel testo, il portale dice Centro. Visitata il 23/11: ci è piaciuta. È ancora al grezzo, fine lavori prevista per maggio 2027.",
    "sources": [
     {
      "name": "Casa.it",
@@ -29,10 +33,6 @@
     "Una delle tre camere è matrimoniale? Che misure hanno le camere?",
     "Il prezzo comprende già allacciamenti, fotovoltaico e giardino sistemato? Come si paga durante la costruzione e c'è la fideiussione?"
    ],
-   "title": "Villa in Via Almerini 47",
-   "type": "Villa",
-   "zone": "Casette (Legnago)",
-   "note": "Dal testo: unità in costruzione in contesto bifamiliare, 3 camere, 2 bagni (uno cieco), ripostiglio, garage per una sola vettura, giardino 100 m², fotovoltaico. Zona Casette indicata nel testo, il portale dice Centro. Visitata il 23/11: ci è piaciuta. È ancora al grezzo, fine lavori prevista per maggio 2027.",
    "uk": {
     "title": "Вілла, вул. Альмеріні 47",
     "type": "Вілла",
@@ -51,6 +51,9 @@
   },
   {
    "id": "bissonfavato-682-terrazzo-bifamiliare",
+   "title": "Porzione di bifamiliare con parco, Terrazzo",
+   "type": "Porzione di bifamiliare",
+   "zone": "Terrazzo centro",
    "price": 175000,
    "sqm": 160,
    "bedrooms": 2,
@@ -61,6 +64,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-21",
    "published": "2026-10-06",
+   "note": "Casa su due piani nel centro di Terrazzo, rinnovata nel tempo e abitabile subito, con grande parco, due garage e cantina. Ha però solo 2 camere e 1 bagno; classe energetica da chiedere.",
    "sources": [
     {
      "name": "Immobiliare.it (Bisson & Favato)",
@@ -74,10 +78,6 @@
     }
    ],
    "questions": [],
-   "title": "Porzione di bifamiliare con parco, Terrazzo",
-   "type": "Porzione di bifamiliare",
-   "zone": "Terrazzo centro",
-   "note": "Casa su due piani nel centro di Terrazzo, rinnovata nel tempo e abitabile subito, con grande parco, due garage e cantina. Ha però solo 2 camere e 1 bagno; classe energetica da chiedere.",
    "uk": {
     "title": "Половина двоквартирного будинку з парком, Террацо",
     "type": "Половина двоквартирного будинку",
@@ -88,6 +88,9 @@
   },
   {
    "id": "bissonfavato-schiera-pasubio",
+   "title": "Villetta a schiera, Via Pasubio 40",
+   "type": "Villetta a schiera",
+   "zone": "Legnago Centro, vicino all'ospedale",
    "price": 165000,
    "sqm": 140,
    "bedrooms": 3,
@@ -98,6 +101,7 @@
    "driveMin": 2,
    "firstSeen": "2026-11-19",
    "published": "2025-10-08",
+   "note": "Dal testo: 140 m² (non specificato se commerciali), 3 camere di cui una matrimoniale con balcone, 1 bagno, garage interno, posto auto, ripostiglio e cantina, anno 1982, ottimo stato, giardino. Classe energetica in definizione. L'annuncio è dell'8 ottobre 2025: chiedere all'agenzia se è ancora disponibile.",
    "sources": [
     {
      "name": "Bisson & Favato",
@@ -110,10 +114,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villetta a schiera, Via Pasubio 40",
-   "type": "Villetta a schiera",
-   "zone": "Legnago Centro, vicino all'ospedale",
-   "note": "Dal testo: 140 m² (non specificato se commerciali), 3 camere di cui una matrimoniale con balcone, 1 bagno, garage interno, posto auto, ripostiglio e cantina, anno 1982, ottimo stato, giardino. Classe energetica in definizione. L'annuncio è dell'8 ottobre 2025: chiedere all'agenzia se è ancora disponibile.",
    "uk": {
     "title": "Таунхаус, вул. Пасубіо 40",
     "type": "Таунхаус",
@@ -123,6 +123,9 @@
   },
   {
    "id": "carducci-porto-bifamiliare",
+   "title": "Villa bifamiliare a Porto di Legnago",
+   "type": "Villa bifamiliare",
+   "zone": "Porto di Legnago",
    "price": 260000,
    "sqm": 165,
    "bedrooms": 3,
@@ -133,6 +136,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": null,
+   "note": "Costruita nel 2019: 3 camere, 2 bagni, garage più 2 posti auto, cantina, giardino su tre lati, fotovoltaico con batteria, classe A2. Attualmente abitata dal proprietario. Non specificato se una camera è matrimoniale.",
    "sources": [
     {
      "name": "Professionecasa",
@@ -157,10 +161,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa bifamiliare a Porto di Legnago",
-   "type": "Villa bifamiliare",
-   "zone": "Porto di Legnago",
-   "note": "Costruita nel 2019: 3 camere, 2 bagni, garage più 2 posti auto, cantina, giardino su tre lati, fotovoltaico con batteria, classe A2. Attualmente abitata dal proprietario. Non specificato se una camera è matrimoniale.",
    "uk": {
     "title": "Двоквартирна вілла в Порто-ді-Леньяго",
     "type": "Двоквартирна вілла",
@@ -170,6 +170,9 @@
   },
   {
    "id": "casa-almerini-225",
+   "title": "Casa indipendente su due livelli, Via Almerini",
+   "type": "Casa indipendente",
+   "zone": "Legnago Centro (indirizzo esatto non pubblicato)",
    "price": 225000,
    "sqm": 190,
    "bedrooms": 2,
@@ -180,6 +183,7 @@
    "driveMin": 4,
    "firstSeen": "2026-11-19",
    "published": "2026-09-17",
+   "note": "Dal testo: strada senza uscita, 2 camere matrimoniali più taverna, lavanderia, laboratorio al piano terra, box doppio, lotto 400 m², abitabile. Solo 2 camere, ma la taverna potrebbe diventare una terza. Classe energetica in richiesta, ripostiglio non citato.",
    "sources": [
     {
      "name": "Casa.it",
@@ -192,10 +196,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Casa indipendente su due livelli, Via Almerini",
-   "type": "Casa indipendente",
-   "zone": "Legnago Centro (indirizzo esatto non pubblicato)",
-   "note": "Dal testo: strada senza uscita, 2 camere matrimoniali più taverna, lavanderia, laboratorio al piano terra, box doppio, lotto 400 m², abitabile. Solo 2 camere, ma la taverna potrebbe diventare una terza. Classe energetica in richiesta, ripostiglio non citato.",
    "uk": {
     "title": "Окремий будинок на два поверхи, вул. Альмеріні",
     "type": "Окремий будинок",
@@ -205,6 +205,9 @@
   },
   {
    "id": "casa-pilastrina-vangadizza-198",
+   "title": "Villa bifamiliare in Via Pilastrina, Vangadizza",
+   "type": "Villa bifamiliare",
+   "zone": "Vangadizza (Legnago)",
    "price": 198000,
    "sqm": 214,
    "bedrooms": 3,
@@ -215,6 +218,7 @@
    "driveMin": 6,
    "firstSeen": "2026-11-20",
    "published": "2026-11-19",
+   "note": "Casa del 1975 ben tenuta, libera subito: soggiorno, studio, cucina abitabile, 3 camere matrimoniali e 2 bagni; al piano terra garage e taverna, cantina, grande terreno sul retro (circa 9.000 m²). Classe energetica D. Da chiedere: com'è la cantina e lo stato di impianti e serramenti.",
    "sources": [
     {
      "name": "Casa.it",
@@ -228,10 +232,6 @@
     }
    ],
    "questions": [],
-   "title": "Villa bifamiliare in Via Pilastrina, Vangadizza",
-   "type": "Villa bifamiliare",
-   "zone": "Vangadizza (Legnago)",
-   "note": "Casa del 1975 ben tenuta, libera subito: soggiorno, studio, cucina abitabile, 3 camere matrimoniali e 2 bagni; al piano terra garage e taverna, cantina, grande terreno sul retro (circa 9.000 m²). Classe energetica D. Da chiedere: com'è la cantina e lo stato di impianti e serramenti.",
    "uk": {
     "title": "Двоквартирна вілла на вул. Пілястріна, Вангадицца",
     "type": "Двоквартирна вілла",
@@ -242,6 +242,9 @@
   },
   {
    "id": "casa-xx-settembre-125",
+   "title": "Villa, Via XX Settembre",
+   "type": "Villa",
+   "zone": "Legnago (indirizzo esatto non pubblicato)",
    "price": 125000,
    "sqm": null,
    "bedrooms": 2,
@@ -252,6 +255,7 @@
    "driveMin": 2,
    "firstSeen": "2026-11-19",
    "published": "2026-11-10",
+   "note": "Dal testo: villetta del 1980, box doppio, posto auto, giardino, terreno di circa 2.000 m², cantina e taverna, classe C. Dati incoerenti tra scheda e descrizione (metratura, camere, bagni): da chiarire con l'inserzionista. Potrebbe essere in Via Borghetto (Canove). Prezzo molto basso: verificare.",
    "sources": [
     {
      "name": "Casa.it",
@@ -264,10 +268,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa, Via XX Settembre",
-   "type": "Villa",
-   "zone": "Legnago (indirizzo esatto non pubblicato)",
-   "note": "Dal testo: villetta del 1980, box doppio, posto auto, giardino, terreno di circa 2.000 m², cantina e taverna, classe C. Dati incoerenti tra scheda e descrizione (metratura, camere, bagni): da chiarire con l'inserzionista. Potrebbe essere in Via Borghetto (Canove). Prezzo molto basso: verificare.",
    "uk": {
     "title": "Вілла, вул. XX Сеттембре",
     "type": "Вілла",
@@ -277,6 +277,9 @@
   },
   {
    "id": "casacerea-sanvito-villette-258",
+   "title": "Villette nuove su un piano, San Vito di Cerea",
+   "type": "Villetta nuova da costruire",
+   "zone": "San Vito (Cerea)",
    "price": 258000,
    "sqm": null,
    "bedrooms": null,
@@ -287,6 +290,7 @@
    "driveMin": 8,
    "firstSeen": "2026-11-21",
    "published": "2026-09-03",
+   "note": "Villette nuove ancora da costruire, tutte su un piano, libere su 4 lati, con 2 bagni, garage, giardino e classe A4. Da chiedere: quante camere (2 o 3), i metri quadri, il ripostiglio e la data di consegna.",
    "sources": [
     {
      "name": "Casa Cerea",
@@ -300,10 +304,6 @@
     }
    ],
    "questions": [],
-   "title": "Villette nuove su un piano, San Vito di Cerea",
-   "type": "Villetta nuova da costruire",
-   "zone": "San Vito (Cerea)",
-   "note": "Villette nuove ancora da costruire, tutte su un piano, libere su 4 lati, con 2 bagni, garage, giardino e classe A4. Da chiedere: quante camere (2 o 3), i metri quadri, il ripostiglio e la data di consegna.",
    "uk": {
     "title": "Нові одноповерхові будиночки, Сан-Віто-ді-Череа",
     "type": "Новий будинок (ще не збудований)",
@@ -314,6 +314,9 @@
   },
   {
    "id": "casacerea-vangadizza-bifamiliare-240",
+   "title": "Bifamiliare intera (due appartamenti)",
+   "type": "Bifamiliare",
+   "zone": "Vangadizza (Legnago)",
    "price": 240000,
    "sqm": 290,
    "bedrooms": 6,
@@ -324,6 +327,7 @@
    "driveMin": 5,
    "firstSeen": "2026-11-21",
    "published": "2026-04-27",
+   "note": "Si vende tutto l'edificio: due appartamenti indipendenti da circa 145 m² ciascuno, 3 camere ognuno, autorimessa, abitabile. Su un altro portale la classe energetica risulta G (la peggiore). Da chiedere se si può comprare un solo appartamento, bagni e cantina. Annuncio pubblicato nel 2025.",
    "sources": [
     {
      "name": "Casa Cerea",
@@ -341,10 +345,6 @@
     }
    ],
    "questions": [],
-   "title": "Bifamiliare intera (due appartamenti)",
-   "type": "Bifamiliare",
-   "zone": "Vangadizza (Legnago)",
-   "note": "Si vende tutto l'edificio: due appartamenti indipendenti da circa 145 m² ciascuno, 3 camere ognuno, autorimessa, abitabile. Su un altro portale la classe energetica risulta G (la peggiore). Da chiedere se si può comprare un solo appartamento, bagni e cantina. Annuncio pubblicato nel 2025.",
    "uk": {
     "title": "Цілий двоквартирний будинок (дві квартири)",
     "type": "Двоквартирний будинок",
@@ -355,6 +355,9 @@
   },
   {
    "id": "casait-43005046-nuova-250",
+   "title": "Casa indipendente nuova costruzione",
+   "type": "Casa indipendente",
+   "zone": "Legnago, a circa 2 km dal centro",
    "price": 250000,
    "sqm": 150,
    "bedrooms": 3,
@@ -365,6 +368,7 @@
    "driveMin": null,
    "firstSeen": "2026-11-21",
    "published": null,
+   "note": "Casa nuova su due piani: 3 camere, 2 bagni, ripostiglio, garage doppio, terrazza, classe A. L'annuncio è vecchio e senza foto vere: chiedere se esiste ancora, la via e quando si consegna.",
    "sources": [
     {
      "name": "Casa.it (Obiettivo Casa)",
@@ -378,10 +382,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa indipendente nuova costruzione",
-   "type": "Casa indipendente",
-   "zone": "Legnago, a circa 2 km dal centro",
-   "note": "Casa nuova su due piani: 3 camere, 2 bagni, ripostiglio, garage doppio, terrazza, classe A. L'annuncio è vecchio e senza foto vere: chiedere se esiste ancora, la via e quando si consegna.",
    "uk": {
     "title": "Новий окремий будинок",
     "type": "Окремий будинок",
@@ -392,6 +392,9 @@
   },
   {
    "id": "casait-53323353-terrazzo-casette",
+   "title": "Casa singola a Terrazzo",
+   "type": "Casa indipendente",
+   "zone": "Terrazzo centro",
    "price": 170000,
    "sqm": 255,
    "bedrooms": 3,
@@ -402,6 +405,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-23",
    "published": "2026-11-10",
+   "note": "Casa singola del 1980, abitabile: soggiorno open space, stanza in più e bagno al piano terra, 3 camere matrimoniali e secondo bagno al primo piano, ampio spazio esterno. L'annuncio non parla di garage né di cantina: da chiedere, insieme alla classe energetica.",
    "sources": [
     {
      "name": "Casa.it (IdeaCasa)",
@@ -415,10 +419,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa singola a Terrazzo",
-   "type": "Casa indipendente",
-   "zone": "Terrazzo centro",
-   "note": "Casa singola del 1980, abitabile: soggiorno open space, stanza in più e bagno al piano terra, 3 camere matrimoniali e secondo bagno al primo piano, ampio spazio esterno. L'annuncio non parla di garage né di cantina: da chiedere, insieme alla classe energetica.",
    "uk": {
     "title": "Окремий будинок у Терраццо",
     "type": "Окремий будинок",
@@ -429,6 +429,9 @@
   },
   {
    "id": "casait-54636136-villa-bartolomea-259",
+   "title": "Casa indipendente ristrutturata, Villa Bartolomea",
+   "type": "Casa indipendente",
+   "zone": "Villa Bartolomea centro",
    "price": 259000,
    "sqm": 200,
    "bedrooms": 4,
@@ -439,6 +442,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-21",
    "published": "2026-11-19",
+   "note": "Casa su due piani rinnovata da poco: 4 camere, 2 bagni, garage doppio, taverna e giardino di oltre 1.000 m². Classe energetica F (consuma parecchio). Da chiedere se c'è una cantina o un ripostiglio e cosa è stato rifatto.",
    "sources": [
     {
      "name": "Casa.it",
@@ -452,10 +456,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa indipendente ristrutturata, Villa Bartolomea",
-   "type": "Casa indipendente",
-   "zone": "Villa Bartolomea centro",
-   "note": "Casa su due piani rinnovata da poco: 4 camere, 2 bagni, garage doppio, taverna e giardino di oltre 1.000 m². Classe energetica F (consuma parecchio). Da chiedere se c'è una cantina o un ripostiglio e cosa è stato rifatto.",
    "uk": {
     "title": "Окремий будинок після ремонту, Вілла-Бартоломеа",
     "zone": "Центр Вілла-Бартоломеа",
@@ -466,6 +466,9 @@
   },
   {
    "id": "casait-54693411-attico-porto",
+   "title": "Attico su due piani a Porto",
+   "type": "Appartamento (attico)",
+   "zone": "Porto di Legnago",
    "price": 259000,
    "sqm": 245,
    "bedrooms": 3,
@@ -476,6 +479,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-20",
    "published": "2026-11-19",
+   "note": "Ultimo piano su due livelli con ascensore, 245 m², 3 camere matrimoniali, 3 bagni e terrazze; rinnovato nel 2014, box doppio e cantina, classe C. Da chiedere le spese di condominio e lo stato del palazzo.",
    "sources": [
     {
      "name": "Casa.it",
@@ -489,10 +493,6 @@
     }
    ],
    "questions": [],
-   "title": "Attico su due piani a Porto",
-   "type": "Appartamento (attico)",
-   "zone": "Porto di Legnago",
-   "note": "Ultimo piano su due livelli con ascensore, 245 m², 3 camere matrimoniali, 3 bagni e terrazze; rinnovato nel 2014, box doppio e cantina, classe C. Da chiedere le spese di condominio e lo stato del palazzo.",
    "uk": {
     "title": "Пентхаус на двох рівнях у Порто",
     "type": "Квартира (пентхаус)",
@@ -503,6 +503,9 @@
   },
   {
    "id": "casait-55183882-canove-ocara",
+   "title": "Casa singola a Canove",
+   "type": "Casa indipendente",
+   "zone": "Canove (Legnago)",
    "price": 110000,
    "sqm": 255,
    "bedrooms": 4,
@@ -513,6 +516,7 @@
    "driveMin": 6,
    "firstSeen": "2026-11-23",
    "published": "2026-11-11",
+   "note": "Casa singola del 1967 su due piani, vicino all'argine dell'Adige: 4 camere, 2 bagni, grande taverna con cucina, cantina, garage e magazzino, cortile recintato. Abitabile ma con finiture d'epoca: chiedere classe energetica e stato di tetto e impianti. È più grande di quanto serve (255 m²).",
    "sources": [
     {
      "name": "Casa.it",
@@ -526,10 +530,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa singola a Canove",
-   "type": "Casa indipendente",
-   "zone": "Canove (Legnago)",
-   "note": "Casa singola del 1967 su due piani, vicino all'argine dell'Adige: 4 camere, 2 bagni, grande taverna con cucina, cantina, garage e magazzino, cortile recintato. Abitabile ma con finiture d'epoca: chiedere classe energetica e stato di tetto e impianti. È più grande di quanto serve (255 m²).",
    "uk": {
     "title": "Окремий будинок у Канове",
     "type": "Окремий будинок",
@@ -540,6 +540,9 @@
   },
   {
    "id": "casait-55189722-casa-170",
+   "title": "Casa indipendente con giardino e box doppio",
+   "type": "Casa indipendente",
+   "zone": "Legnago (posizione da chiedere)",
    "price": 270000,
    "sqm": 170,
    "bedrooms": null,
@@ -550,6 +553,7 @@
    "driveMin": null,
    "firstSeen": "2026-11-21",
    "published": "2026-11-11",
+   "note": "Casa singola su due piani, 170 m², 2 bagni, box doppio molto grande, ripostiglio e giardino, abitabile. Classe energetica D. La via non è pubblicata: da chiedere, insieme al numero di camere.",
    "sources": [
     {
      "name": "Casa.it (Casatua)",
@@ -563,10 +567,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa indipendente con giardino e box doppio",
-   "type": "Casa indipendente",
-   "zone": "Legnago (posizione da chiedere)",
-   "note": "Casa singola su due piani, 170 m², 2 bagni, box doppio molto grande, ripostiglio e giardino, abitabile. Classe energetica D. La via non è pubblicata: da chiedere, insieme al numero di camere.",
    "uk": {
     "title": "Окремий будинок із садом і подвійним гаражем",
     "type": "Окремий будинок",
@@ -576,7 +576,47 @@
    }
   },
   {
+   "id": "casait-55262188-spinimbecco-arzaron",
+   "title": "Casa con due appartamenti, Spinimbecco",
+   "type": "Casa indipendente (due unità)",
+   "zone": "Spinimbecco (Villa Bartolomea)",
+   "price": 249000,
+   "sqm": 320,
+   "bedrooms": 4,
+   "bathrooms": 3,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 7,
+   "firstSeen": "2026-11-24",
+   "published": "2026-11-21",
+   "note": "Casa grande (320 m²) con due appartamenti collegati, 4 camere e 3 bagni in tutto, garage doppio e cantina, abitabile. Da chiedere la classe energetica e se si può usare come una casa sola.",
+   "sources": [
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/55262188/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-24",
+     "price": 249000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Будинок із двома квартирами, Спінімбекко",
+    "type": "Окремий будинок (дві квартири)",
+    "zone": "Спінімбекко (Вілла-Бартоломеа)",
+    "note": "Великий будинок (320 м²) з двома з'єднаними квартирами: разом 4 спальні та 3 ванні, подвійний гараж і погріб, придатний для життя. Треба запитати енергетичний клас і чи можна жити в ньому як в одному будинку.",
+    "questions": []
+   }
+  },
+  {
    "id": "casalegnagoporto-casa-singola-190",
+   "title": "Casa singola con giardino e taverna",
+   "type": "Casa singola",
+   "zone": "Porto di Legnago",
    "price": 190000,
    "sqm": null,
    "bedrooms": 3,
@@ -587,6 +627,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": "2024-08-02",
+   "note": "Dal testo: giardino su 4 lati, 2 camere matrimoniali al primo piano e 2 stanze al piano terra adattabili, 3 bagni, garage doppio, posto auto, cantina, fotovoltaico 4 kW. Metri quadri e classe energetica non indicati. L'annuncio è dell'agosto 2024: chiedere all'agenzia se è ancora in vendita.",
    "sources": [
     {
      "name": "Casa Legnago Porto",
@@ -595,10 +636,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Casa singola con giardino e taverna",
-   "type": "Casa singola",
-   "zone": "Porto di Legnago",
-   "note": "Dal testo: giardino su 4 lati, 2 camere matrimoniali al primo piano e 2 stanze al piano terra adattabili, 3 bagni, garage doppio, posto auto, cantina, fotovoltaico 4 kW. Metri quadri e classe energetica non indicati. L'annuncio è dell'agosto 2024: chiedere all'agenzia se è ancora in vendita.",
    "uk": {
     "title": "Окремий будинок із садом і таверною",
     "type": "Окремий будинок",
@@ -607,7 +644,51 @@
    }
   },
   {
+   "id": "centrocasa-terrazzo-casa-singola-250",
+   "title": "Casa singola con garage doppio, Terrazzo",
+   "type": "Casa singola",
+   "zone": "Terrazzo",
+   "price": 250000,
+   "sqm": 250,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 11,
+   "firstSeen": "2026-11-24",
+   "published": "2026-10-09",
+   "note": "Casa singola in ottimo stato, 250 m², 3 camere più mansarda, 2 bagni, garage doppio da 40 m² e cantina. Da chiedere classe energetica e indirizzo esatto.",
+   "sources": [
+    {
+     "name": "Immobiliare.it (Centro Casa)",
+     "url": "https://www.immobiliare.it/annunci/131509944/"
+    },
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/54520741/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-24",
+     "price": 250000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Окремий будинок із подвійним гаражем, Терраццо",
+    "type": "Окремий будинок",
+    "zone": "Терраццо",
+    "note": "Окремий будинок у дуже доброму стані, 250 м², 3 спальні та мансарда, 2 ванні, подвійний гараж 40 м² і погріб. Треба запитати енергетичний клас і точну адресу.",
+    "questions": []
+   }
+  },
+  {
    "id": "cerea-monte-sabotino-240",
+   "title": "Villa unifamiliare, Via Monte Sabotino (Cerea)",
+   "type": "Villa unifamiliare",
+   "zone": "Cerea, Villaggio Trieste",
    "price": 240000,
    "sqm": 164,
    "bedrooms": 3,
@@ -618,6 +699,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-20",
    "published": "2026-11-05",
+   "note": "Dal testo: villa su due piani del 1960 ristrutturata nel 2006, ottimo stato, giardino su quattro lati, 3 camere, 2 bagni, 2 posti auto. Il garage vero non c'è: un fabbricato di circa 80 m² (oggi laboratorio) può fare da garage e magazzino. Classe energetica non indicata.",
    "sources": [
     {
      "name": "Immobiliare.it (Casacerea)",
@@ -634,10 +716,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa unifamiliare, Via Monte Sabotino (Cerea)",
-   "type": "Villa unifamiliare",
-   "zone": "Cerea, Villaggio Trieste",
-   "note": "Dal testo: villa su due piani del 1960 ristrutturata nel 2006, ottimo stato, giardino su quattro lati, 3 camere, 2 bagni, 2 posti auto. Il garage vero non c'è: un fabbricato di circa 80 m² (oggi laboratorio) può fare da garage e magazzino. Classe energetica non indicata.",
    "uk": {
     "title": "Окрема вілла, вул. Монте Саботіно (Череа)",
     "type": "Окрема вілла",
@@ -647,6 +725,9 @@
   },
   {
    "id": "cerea-schiera-angolare-275",
+   "title": "Villetta a schiera angolare, Cerea centro",
+   "type": "Villa a schiera",
+   "zone": "Cerea centro",
    "price": 275000,
    "sqm": 150,
    "bedrooms": 3,
@@ -657,6 +738,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-20",
    "published": "2026-10-29",
+   "note": "Dal testo: casa recente in ottimo stato, giardino privato ampio, piano terra con soggiorno, cucina separata, studio e bagno di servizio; primo piano 3 camere e secondo bagno. Box privato, classe C, disponibile subito. Ripostiglio da chiedere.",
    "sources": [
     {
      "name": "Immobiliare.it (Immobiliare Castello)",
@@ -665,10 +747,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villetta a schiera angolare, Cerea centro",
-   "type": "Villa a schiera",
-   "zone": "Cerea centro",
-   "note": "Dal testo: casa recente in ottimo stato, giardino privato ampio, piano terra con soggiorno, cucina separata, studio e bagno di servizio; primo piano 3 camere e secondo bagno. Box privato, classe C, disponibile subito. Ripostiglio da chiedere.",
    "uk": {
     "title": "Кутовий таунхаус, центр Череа",
     "type": "Таунхаус",
@@ -678,6 +756,9 @@
   },
   {
    "id": "idealista-beccaria-porto",
+   "title": "Villa singola, Via Cesare Beccaria",
+   "type": "Villa singola",
+   "zone": "Porto di Legnago",
    "price": 220000,
    "sqm": 216,
    "bedrooms": 3,
@@ -688,6 +769,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": "2026-06-23",
+   "note": "Villa singola del 1980, 216 m², 3 camere al primo piano, 2 bagni (uno nel garage), garage doppio, ripostiglio, giardino, buono stato. Classe energetica non indicata. Allarme e videosorveglianza inclusi.",
    "sources": [
     {
      "name": "Immobiliare.it (Bisson & Favato)",
@@ -712,10 +794,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa singola, Via Cesare Beccaria",
-   "type": "Villa singola",
-   "zone": "Porto di Legnago",
-   "note": "Villa singola del 1980, 216 m², 3 camere al primo piano, 2 bagni (uno nel garage), garage doppio, ripostiglio, giardino, buono stato. Classe energetica non indicata. Allarme e videosorveglianza inclusi.",
    "uk": {
     "title": "Окрема вілла, вул. Чезаре Беккарія",
     "type": "Окрема вілла",
@@ -725,6 +803,9 @@
   },
   {
    "id": "immobiliare-122279606-san-vito-mantegna",
+   "title": "Mezza casa al primo piano a San Vito di Cerea",
+   "type": "Porzione di bifamiliare",
+   "zone": "San Vito (Cerea)",
    "price": 139000,
    "sqm": 155,
    "bedrooms": 3,
@@ -735,6 +816,7 @@
    "driveMin": 8,
    "firstSeen": "2026-11-20",
    "published": "2025-07-25",
+   "note": "Primo piano con ingresso indipendente, 155 m², 3 camere, 2 bagni, 2 garage; casa del 1969 abitabile. Annuncio vecchio: chiedere se è ancora disponibile, la classe energetica e se c'è una cantina.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa Cerea)",
@@ -748,10 +830,6 @@
     }
    ],
    "questions": [],
-   "title": "Mezza casa al primo piano a San Vito di Cerea",
-   "type": "Porzione di bifamiliare",
-   "zone": "San Vito (Cerea)",
-   "note": "Primo piano con ingresso indipendente, 155 m², 3 camere, 2 bagni, 2 garage; casa del 1969 abitabile. Annuncio vecchio: chiedere se è ancora disponibile, la classe energetica e se c'è una cantina.",
    "uk": {
     "title": "Половина будинку на другому поверсі, Сан-Віто-ді-Череа",
     "type": "Частина будинку на дві сім'ї",
@@ -762,6 +840,9 @@
   },
   {
    "id": "immobiliare-129823622-san-pietro-nuova",
+   "title": "Porzione di bifamiliare nuova con piscina",
+   "type": "Porzione di bifamiliare",
+   "zone": "San Pietro di Legnago",
    "price": null,
    "sqm": 148,
    "bedrooms": 4,
@@ -772,6 +853,7 @@
    "driveMin": 5,
    "firstSeen": "2026-11-21",
    "published": "2026-06-11",
+   "note": "Casa nuova (2025) su un solo piano: 4 camere, 2 bagni, garage grande da 44 m², ripostiglio, piscina e cortile, classe A4. Il prezzo non è pubblicato: va chiesto, insieme a se è ancora disponibile.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa)",
@@ -780,10 +862,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Porzione di bifamiliare nuova con piscina",
-   "type": "Porzione di bifamiliare",
-   "zone": "San Pietro di Legnago",
-   "note": "Casa nuova (2025) su un solo piano: 4 camere, 2 bagni, garage grande da 44 m², ripostiglio, piscina e cortile, classe A4. Il prezzo non è pubblicato: va chiesto, insieme a se è ancora disponibile.",
    "uk": {
     "title": "Нова частина двоквартирного будинку з басейном",
     "type": "Частина двоквартирного будинку",
@@ -794,6 +872,9 @@
   },
   {
    "id": "immobiliare-130121712-san-vito-ferramosche",
+   "title": "Villa unifamiliare, Via Ferramosche 42/A, San Vito",
+   "type": "Villa unifamiliare",
+   "zone": "San Vito",
    "price": 124000,
    "sqm": 160,
    "bedrooms": 4,
@@ -804,6 +885,7 @@
    "driveMin": 8,
    "firstSeen": "2026-11-20",
    "published": "2026-06-22",
+   "note": "Casa indipendente su due piani, 4 camere matrimoniali, 2 bagni, cucina abitabile, corte di 620 m², box e 2 posti auto, laboratorio di 170 m². Buono stato ma classe energetica G (consumi alti). Annuncio di giugno 2026: verificare che sia ancora in vendita.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa Cerea)",
@@ -812,10 +894,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa unifamiliare, Via Ferramosche 42/A, San Vito",
-   "type": "Villa unifamiliare",
-   "zone": "San Vito",
-   "note": "Casa indipendente su due piani, 4 camere matrimoniali, 2 bagni, cucina abitabile, corte di 620 m², box e 2 posti auto, laboratorio di 170 m². Buono stato ma classe energetica G (consumi alti). Annuncio di giugno 2026: verificare che sia ancora in vendita.",
    "uk": {
     "title": "Окрема вілла, вул. Феррамоске 42/A, Сан-Віто",
     "type": "Окрема вілла",
@@ -825,6 +903,9 @@
   },
   {
    "id": "immobiliare-130739046-canove-plurifamiliare",
+   "title": "Casa con due abitazioni e terreno, Canove",
+   "type": "Casa con due unità",
+   "zone": "Canove (Legnago)",
    "price": 239000,
    "sqm": 286,
    "bedrooms": 4,
@@ -835,6 +916,7 @@
    "driveMin": 6,
    "firstSeen": "2026-11-21",
    "published": "2026-10-26",
+   "note": "Due abitazioni indipendenti nello stesso lotto: una di circa 143 m² rinnovata da poco e una di 83 m², con 2 garage, cantina e circa 2.000 m² di terreno. Da chiedere la classe energetica e quante camere ha la casa principale.",
    "sources": [
     {
      "name": "Immobiliare.it",
@@ -852,10 +934,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa con due abitazioni e terreno, Canove",
-   "type": "Casa con due unità",
-   "zone": "Canove (Legnago)",
-   "note": "Due abitazioni indipendenti nello stesso lotto: una di circa 143 m² rinnovata da poco e una di 83 m², con 2 garage, cantina e circa 2.000 m² di terreno. Da chiedere la classe energetica e quante camere ha la casa principale.",
    "uk": {
     "title": "Будинок із двома житлами та ділянкою, Канове",
     "zone": "Канове (Леньяго)",
@@ -866,6 +944,9 @@
   },
   {
    "id": "immobiliare-130867102-begosso",
+   "title": "Casa indipendente con grande giardino, Begosso",
+   "type": "Casa indipendente",
+   "zone": "Begosso (Terrazzo)",
    "price": 220000,
    "sqm": 334,
    "bedrooms": 3,
@@ -876,6 +957,7 @@
    "driveMin": 10,
    "firstSeen": "2026-11-22",
    "published": "2026-07-13",
+   "note": "Casa di un privato, ristrutturata nel 2006 e abitata dai proprietari: 3 camere, 1 bagno (un secondo bagno da finire), cantina, ripostigli, garage per 2 auto e un giardino di oltre 5.000 m². È molto grande (334 m²); chiedere la classe energetica e se è ancora in vendita.",
    "sources": [
     {
      "name": "Immobiliare.it (privato)",
@@ -889,10 +971,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa indipendente con grande giardino, Begosso",
-   "type": "Casa indipendente",
-   "zone": "Begosso (Terrazzo)",
-   "note": "Casa di un privato, ristrutturata nel 2006 e abitata dai proprietari: 3 camere, 1 bagno (un secondo bagno da finire), cantina, ripostigli, garage per 2 auto e un giardino di oltre 5.000 m². È molto grande (334 m²); chiedere la classe energetica e se è ancora in vendita.",
    "uk": {
     "title": "Окремий будинок з великим садом, Бегоссо",
     "zone": "Бегоссо (Террацко)",
@@ -903,6 +981,9 @@
   },
   {
    "id": "immobiliare-133402412-boschi-santanna",
+   "title": "Villa singola a Boschi Sant'Anna",
+   "type": "Villa unifamiliare",
+   "zone": "Boschi Sant'Anna",
    "price": 125000,
    "sqm": null,
    "bedrooms": 4,
@@ -913,6 +994,7 @@
    "driveMin": 9,
    "firstSeen": "2026-11-20",
    "published": "2026-10-15",
+   "note": "Casa abitabile subito con 4 camere, 2 bagni, garage di circa 30 m², taverna e ripostiglio. Da chiedere: anno di costruzione, classe energetica e metri quadri esatti (circa 190-205).",
    "sources": [
     {
      "name": "Immobiliare.it (Sogno Immobiliare)",
@@ -934,10 +1016,6 @@
     }
    ],
    "questions": [],
-   "title": "Villa singola a Boschi Sant'Anna",
-   "type": "Villa unifamiliare",
-   "zone": "Boschi Sant'Anna",
-   "note": "Casa abitabile subito con 4 camere, 2 bagni, garage di circa 30 m², taverna e ripostiglio. Da chiedere: anno di costruzione, classe energetica e metri quadri esatti (circa 190-205).",
    "uk": {
     "title": "Окремий будинок у Боскі-Сант'Анна",
     "type": "Окремий будинок (вілла)",
@@ -948,6 +1026,9 @@
   },
   {
    "id": "immobiliare-133638900-cerea-via-rosa",
+   "title": "Villetta a schiera d'angolo a Cerea",
+   "type": "Villa a schiera",
+   "zone": "Cerea centro",
    "price": 159000,
    "sqm": 240,
    "bedrooms": 4,
@@ -958,6 +1039,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-20",
    "published": "2026-10-16",
+   "note": "Casa del 1970 abitabile, grande (240 m²), con 4 camere, 2 bagni, garage, ripostiglio e giardino. Da chiedere la classe energetica e lo stato di impianti e finestre.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa Cerea)",
@@ -971,10 +1053,6 @@
     }
    ],
    "questions": [],
-   "title": "Villetta a schiera d'angolo a Cerea",
-   "type": "Villa a schiera",
-   "zone": "Cerea centro",
-   "note": "Casa del 1970 abitabile, grande (240 m²), con 4 camere, 2 bagni, garage, ripostiglio e giardino. Da chiedere la classe energetica e lo stato di impianti e finestre.",
    "uk": {
     "title": "Кутовий таунхаус у Череа",
     "type": "Таунхаус",
@@ -985,6 +1063,9 @@
   },
   {
    "id": "immobiliare-134371847-cerea-stradella-monteforte",
+   "title": "Casa indipendente, Via Stradella Monteforte, Cerea",
+   "type": "Terratetto unifamiliare",
+   "zone": "Cerea",
    "price": 145000,
    "sqm": 189,
    "bedrooms": 3,
@@ -995,6 +1076,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-20",
    "published": "2026-11-03",
+   "note": "Casa indipendente su due livelli in zona residenziale tranquilla, 3 camere (2 matrimoniali), 1 bagno, box, locali ripostiglio, giardino, cancello automatico. Buono stato. Classe energetica in attesa.",
    "sources": [
     {
      "name": "Immobiliare.it (Professionecasa Cerea)",
@@ -1007,10 +1089,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Casa indipendente, Via Stradella Monteforte, Cerea",
-   "type": "Terratetto unifamiliare",
-   "zone": "Cerea",
-   "note": "Casa indipendente su due livelli in zona residenziale tranquilla, 3 camere (2 matrimoniali), 1 bagno, box, locali ripostiglio, giardino, cancello automatico. Buono stato. Classe energetica in attesa.",
    "uk": {
     "title": "Окремий будинок, вул. Страделла Монтефорте, Череа",
     "type": "Окремий будинок",
@@ -1020,6 +1098,9 @@
   },
   {
    "id": "immobiliare-134632011-casette-230",
+   "title": "Villa unifamiliare su due piani",
+   "type": "Villa unifamiliare",
+   "zone": "Casette (Legnago)",
    "price": null,
    "sqm": 230,
    "bedrooms": 4,
@@ -1030,6 +1111,7 @@
    "driveMin": 4,
    "firstSeen": "2026-11-21",
    "published": null,
+   "note": "Casa del 1967 di 230 m² su due piani: 4 camere, 2 bagni, garage, cantina e giardino. Oggi ci vivono due famiglie: chiedere se è libera alla vendita. Prezzo e classe energetica non pubblicati.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa)",
@@ -1042,10 +1124,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa unifamiliare su due piani",
-   "type": "Villa unifamiliare",
-   "zone": "Casette (Legnago)",
-   "note": "Casa del 1967 di 230 m² su due piani: 4 camere, 2 bagni, garage, cantina e giardino. Oggi ci vivono due famiglie: chiedere se è libera alla vendita. Prezzo e classe energetica non pubblicati.",
    "uk": {
     "title": "Двоповерхова вілла на одну сім’ю",
     "type": "Вілла",
@@ -1056,6 +1134,9 @@
   },
   {
    "id": "immobiliare-134929533-cerea-monte-carega-140",
+   "title": "Casa unifamiliare, Via Monte Carega (Cerea)",
+   "type": "Casa unifamiliare",
+   "zone": "Cerea centro",
    "price": 140000,
    "sqm": 145,
    "bedrooms": 2,
@@ -1066,6 +1147,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-22",
    "published": "2026-11-20",
+   "note": "Casa degli anni '60 parzialmente ristrutturata, su due piani, con 2 camere e 1 bagno. Da chiedere: se c'è un vero garage, se c'è una cantina e la classe energetica.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa Cerea)",
@@ -1079,10 +1161,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa unifamiliare, Via Monte Carega (Cerea)",
-   "type": "Casa unifamiliare",
-   "zone": "Cerea centro",
-   "note": "Casa degli anni '60 parzialmente ristrutturata, su due piani, con 2 camere e 1 bagno. Da chiedere: se c'è un vero garage, se c'è una cantina e la classe energetica.",
    "uk": {
     "title": "Окремий будинок, вул. Монте Карега (Череа)",
     "type": "Окремий будинок",
@@ -1093,6 +1171,9 @@
   },
   {
    "id": "immobiliare-134947077-cerea-monte-carega-185",
+   "title": "Villa ristrutturata, Via Monte Carega (Cerea)",
+   "type": "Villa unifamiliare",
+   "zone": "Cerea centro",
    "price": 185000,
    "sqm": 200,
    "bedrooms": null,
@@ -1103,6 +1184,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-22",
    "published": "2026-11-20",
+   "note": "Villa degli anni '80 ristrutturata nel 2010, su due livelli, con 2 bagni, ripostigli e un laboratorio di 53 m². Da chiedere: quante camere ci sono (l'annuncio dice 2 o 4), se il posto auto è un garage chiuso e la classe energetica.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa Cerea)",
@@ -1116,10 +1198,6 @@
     }
    ],
    "questions": [],
-   "title": "Villa ristrutturata, Via Monte Carega (Cerea)",
-   "type": "Villa unifamiliare",
-   "zone": "Cerea centro",
-   "note": "Villa degli anni '80 ristrutturata nel 2010, su due livelli, con 2 bagni, ripostigli e un laboratorio di 53 m². Da chiedere: quante camere ci sono (l'annuncio dice 2 o 4), se il posto auto è un garage chiuso e la classe energetica.",
    "uk": {
     "title": "Відремонтована вілла, вул. Монте Карега (Череа)",
     "type": "Окрема вілла",
@@ -1130,6 +1208,9 @@
   },
   {
    "id": "parini-4-villa-300",
+   "title": "Villa unifamiliare, Via Parini 4",
+   "type": "Villa unifamiliare",
+   "zone": "Legnago Centro",
    "price": 287000,
    "sqm": 300,
    "bedrooms": 3,
@@ -1140,6 +1221,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": "2026-08-27",
+   "note": "300 m² su due piani: soggiorno, cucina abitabile, 3 camere, 1 solo bagno e balcone; al piano terra lavanderia, locale tecnico e ampio garage. Classe B, buono stato. Molto grande.",
    "sources": [
     {
      "name": "Immobiliare.it (dove.it)",
@@ -1148,10 +1230,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa unifamiliare, Via Parini 4",
-   "type": "Villa unifamiliare",
-   "zone": "Legnago Centro",
-   "note": "300 m² su due piani: soggiorno, cucina abitabile, 3 camere, 1 solo bagno e balcone; al piano terra lavanderia, locale tecnico e ampio garage. Classe B, buono stato. Molto grande.",
    "uk": {
     "title": "Окрема вілла, вул. Паріні 4",
     "type": "Окрема вілла",
@@ -1161,6 +1239,9 @@
   },
   {
    "id": "primacasa-126356283-porto-250",
+   "title": "Villa singola a Porto",
+   "type": "Villa singola",
+   "zone": "Porto di Legnago",
    "price": 250000,
    "sqm": 210,
    "bedrooms": 3,
@@ -1171,6 +1252,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": "2026-07-04",
+   "note": "Villa singola: piano rialzato con 3 camere e bagno, semi-interrato con taverna e secondo bagno, garage di 35 m², cantina, giardino di circa 600 m². Classe energetica E. Annuncio di luglio 2026: chiedere se è ancora disponibile.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa)",
@@ -1179,10 +1261,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa singola a Porto",
-   "type": "Villa singola",
-   "zone": "Porto di Legnago",
-   "note": "Villa singola: piano rialzato con 3 camere e bagno, semi-interrato con taverna e secondo bagno, garage di 35 m², cantina, giardino di circa 600 m². Classe energetica E. Annuncio di luglio 2026: chiedere se è ancora disponibile.",
    "uk": {
     "title": "Окрема вілла в Порто",
     "type": "Окрема вілла",
@@ -1192,6 +1270,9 @@
   },
   {
    "id": "primacasa-133338142-san-vito",
+   "title": "Villa a schiera ristrutturata, San Vito",
+   "type": "Villa a schiera",
+   "zone": "San Vito",
    "price": 195000,
    "sqm": 215,
    "bedrooms": 3,
@@ -1202,6 +1283,7 @@
    "driveMin": 8,
    "firstSeen": "2026-11-20",
    "published": "2026-10-07",
+   "note": "Su tre piani: soggiorno, cucina abitabile e bagno al piano terra; 3 camere e bagno al primo piano; studio all'ultimo piano. Box, posto auto, cantina, giardino. Ristrutturata nel 2021, fotovoltaico con accumulo, classe B, ottimo stato.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa)",
@@ -1210,10 +1292,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa a schiera ristrutturata, San Vito",
-   "type": "Villa a schiera",
-   "zone": "San Vito",
-   "note": "Su tre piani: soggiorno, cucina abitabile e bagno al piano terra; 3 camere e bagno al primo piano; studio all'ultimo piano. Box, posto auto, cantina, giardino. Ristrutturata nel 2021, fotovoltaico con accumulo, classe B, ottimo stato.",
    "uk": {
     "title": "Відремонтований таунхаус, Сан-Віто",
     "type": "Таунхаус",
@@ -1223,6 +1301,9 @@
   },
   {
    "id": "primacasa-8915-zona-ospedale",
+   "title": "Casa indipendente, zona ospedale",
+   "type": "Casa indipendente",
+   "zone": "Legnago, zona ospedale",
    "price": 215000,
    "sqm": null,
    "bedrooms": 3,
@@ -1233,6 +1314,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-19",
    "published": "2026-11-11",
+   "note": "Due piani, 3 camere matrimoniali, 2 bagni, box collegato alla casa, cortile su tre lati. Classe energetica F (consumi alti). Metratura da chiarire: 196 o 156 m² a seconda del sito.",
    "sources": [
     {
      "name": "Primacasa Cerea",
@@ -1249,10 +1331,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Casa indipendente, zona ospedale",
-   "type": "Casa indipendente",
-   "zone": "Legnago, zona ospedale",
-   "note": "Due piani, 3 camere matrimoniali, 2 bagni, box collegato alla casa, cortile su tre lati. Classe energetica F (consumi alti). Metratura da chiarire: 196 o 156 m² a seconda del sito.",
    "uk": {
     "title": "Окремий будинок біля лікарні",
     "type": "Окремий будинок",
@@ -1262,6 +1340,9 @@
   },
   {
    "id": "professionecasa-3295453-porto",
+   "title": "Porzione di bifamiliare al piano terra",
+   "type": "Porzione di bifamiliare",
+   "zone": "Porto di Legnago, vicino alla chiesa",
    "price": 280000,
    "sqm": 127,
    "bedrooms": null,
@@ -1272,6 +1353,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-21",
    "published": null,
+   "note": "Piano terra con interni nuovi, 2 bagni, giardino, box e cantina (secondo l'agenzia). È piccola: 127 m². Da chiedere quante camere e la classe energetica.",
    "sources": [
     {
      "name": "Professionecasa",
@@ -1289,10 +1371,6 @@
     }
    ],
    "questions": [],
-   "title": "Porzione di bifamiliare al piano terra",
-   "type": "Porzione di bifamiliare",
-   "zone": "Porto di Legnago, vicino alla chiesa",
-   "note": "Piano terra con interni nuovi, 2 bagni, giardino, box e cantina (secondo l'agenzia). È piccola: 127 m². Da chiedere quante camere e la classe energetica.",
    "uk": {
     "title": "Частина двоквартирного будинку на першому поверсі",
     "type": "Частина двоквартирного будинку",
@@ -1303,6 +1381,9 @@
   },
   {
    "id": "professionecasa-3327098-attico-porto",
+   "title": "Attico ristrutturato con due terrazzi, Porto",
+   "type": "Attico",
+   "zone": "Porto di Legnago, centro storico",
    "price": 299000,
    "sqm": 168,
    "bedrooms": null,
@@ -1313,6 +1394,7 @@
    "driveMin": null,
    "firstSeen": "2026-11-22",
    "published": null,
+   "note": "Attico all'ultimo piano con ascensore, 168 m², 2 bagni, box, due terrazzi e aria condizionata, classe B, ristrutturato con finiture di pregio. Da chiedere: quante camere, se c'è una cantina e l'indirizzo esatto.",
    "sources": [
     {
      "name": "Professionecasa",
@@ -1326,10 +1408,6 @@
     }
    ],
    "questions": [],
-   "title": "Attico ristrutturato con due terrazzi, Porto",
-   "type": "Attico",
-   "zone": "Porto di Legnago, centro storico",
-   "note": "Attico all'ultimo piano con ascensore, 168 m², 2 bagni, box, due terrazzi e aria condizionata, classe B, ristrutturato con finiture di pregio. Da chiedere: quante camere, se c'è una cantina e l'indirizzo esatto.",
    "uk": {
     "title": "Відремонтований пентхаус з двома терасами, Порто",
     "zone": "Порто-ді-Леньяго, історичний центр",
@@ -1340,6 +1418,9 @@
   },
   {
    "id": "quadrifoglio-831-appartamento",
+   "title": "Appartamento al piano terra con giardino, Legnago",
+   "type": "Appartamento",
+   "zone": "Legnago (via da confermare)",
    "price": 250000,
    "sqm": 150,
    "bedrooms": 3,
@@ -1350,6 +1431,7 @@
    "driveMin": null,
    "firstSeen": "2026-11-20",
    "published": null,
+   "note": "Appartamento al piano terra con giardino privato: 150 m², 3 camere, 2 bagni, garage chiuso collegato alla casa, ripostiglio-lavanderia, classe A+. La palazzina è in rifacimento completo: da chiedere quando viene consegnato finito e in quale via si trova.",
    "sources": [
     {
      "name": "Il Quadrifoglio (rif. 831)",
@@ -1363,10 +1445,6 @@
     }
    ],
    "questions": [],
-   "title": "Appartamento al piano terra con giardino, Legnago",
-   "type": "Appartamento",
-   "zone": "Legnago (via da confermare)",
-   "note": "Appartamento al piano terra con giardino privato: 150 m², 3 camere, 2 bagni, garage chiuso collegato alla casa, ripostiglio-lavanderia, classe A+. La palazzina è in rifacimento completo: da chiedere quando viene consegnato finito e in quale via si trova.",
    "uk": {
     "title": "Квартира на першому поверсі з садом, Леньяго",
     "type": "Квартира",
@@ -1377,6 +1455,9 @@
   },
   {
    "id": "quadrifoglio-932-porto-appartamento",
+   "title": "Appartamento in palazzo storico, Porto",
+   "type": "Appartamento",
+   "zone": "Porto di Legnago, centro storico",
    "price": 165000,
    "sqm": 166,
    "bedrooms": 3,
@@ -1387,6 +1468,7 @@
    "driveMin": 3,
    "firstSeen": "2026-11-21",
    "published": "2026-11-03",
+   "note": "Grande appartamento al primo piano di un palazzo storico nel centro di Porto, con tetto e facciate rifatti: 3 camere (una con bagno privato), 2 bagni, soggiorno con camino, garage e cantina. Classe energetica E e senza ascensore; il prezzo cambia da un annuncio all'altro (165.000-172.000): chiedere il prezzo giusto e se oggi è affittato.",
    "sources": [
     {
      "name": "Immobiliare.it (Il Quadrifoglio)",
@@ -1408,10 +1490,6 @@
     }
    ],
    "questions": [],
-   "title": "Appartamento in palazzo storico, Porto",
-   "type": "Appartamento",
-   "zone": "Porto di Legnago, centro storico",
-   "note": "Grande appartamento al primo piano di un palazzo storico nel centro di Porto, con tetto e facciate rifatti: 3 camere (una con bagno privato), 2 bagni, soggiorno con camino, garage e cantina. Classe energetica E e senza ascensore; il prezzo cambia da un annuncio all'altro (165.000-172.000): chiedere il prezzo giusto e se oggi è affittato.",
    "uk": {
     "title": "Квартира в історичному будинку, Порто",
     "type": "Квартира",
@@ -1422,6 +1500,9 @@
   },
   {
    "id": "quadrifoglio-957-vigo",
+   "title": "Villa bifamiliare in residence, Vigo",
+   "type": "Villa bifamiliare",
+   "zone": "Vigo (Legnago)",
    "price": 285000,
    "sqm": 150,
    "bedrooms": 3,
@@ -1432,6 +1513,7 @@
    "driveMin": 5,
    "firstSeen": "2026-11-19",
    "published": null,
+   "note": "Costruita nel 2022, due livelli, 3 camere al primo piano, 2 bagni, garage doppio più posto auto, ripostiglio, giardino di 100 m², climatizzata, classe B. Attualmente abitata: da chiedere quando sarebbe libera. L'indirizzo esatto è da confermare.",
    "sources": [
     {
      "name": "Il Quadrifoglio Immobiliare",
@@ -1456,10 +1538,6 @@
     "Ci sono spese del residence (parti comuni, giardino, cancello)? Quanto al mese?",
     "Il prezzo di 285.000 è trattabile? Cosa resta nella casa (climatizzatori, cucina, arredi)?"
    ],
-   "title": "Villa bifamiliare in residence, Vigo",
-   "type": "Villa bifamiliare",
-   "zone": "Vigo (Legnago)",
-   "note": "Costruita nel 2022, due livelli, 3 camere al primo piano, 2 bagni, garage doppio più posto auto, ripostiglio, giardino di 100 m², climatizzata, classe B. Attualmente abitata: da chiedere quando sarebbe libera. L'indirizzo esatto è da confermare.",
    "uk": {
     "title": "Двоквартирна вілла в житловому комплексі, Віго",
     "type": "Двоквартирна вілла",
@@ -1478,6 +1556,9 @@
   },
   {
    "id": "sogno-14v-terrazzo-villetta-153",
+   "title": "Villetta indipendente, Terrazzo centro",
+   "type": "Villetta indipendente",
+   "zone": "Terrazzo centro",
    "price": 153000,
    "sqm": 200,
    "bedrooms": 3,
@@ -1488,6 +1569,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-21",
    "published": "2026-02-09",
+   "note": "Villetta di circa 200 m² in centro a Terrazzo, abitabile subito: 3 camere matrimoniali, 2 bagni, ripostiglio-lavanderia, garage di circa 40 m² e giardino. Annuncio di febbraio: chiedere se è ancora libera, l'anno di costruzione e la classe energetica.",
    "sources": [
     {
      "name": "Sogno Immobiliare",
@@ -1501,10 +1583,6 @@
     }
    ],
    "questions": [],
-   "title": "Villetta indipendente, Terrazzo centro",
-   "type": "Villetta indipendente",
-   "zone": "Terrazzo centro",
-   "note": "Villetta di circa 200 m² in centro a Terrazzo, abitabile subito: 3 camere matrimoniali, 2 bagni, ripostiglio-lavanderia, garage di circa 40 m² e giardino. Annuncio di febbraio: chiedere se è ancora libera, l'anno di costruzione e la classe energetica.",
    "uk": {
     "title": "Окремий будиночок, центр Террацо",
     "type": "Окремий будинок",
@@ -1514,7 +1592,121 @@
    }
   },
   {
+   "id": "sogno-attico-legnago-138",
+   "title": "Attico con ascensore, Legnago centro",
+   "type": "Appartamento (attico)",
+   "zone": "Legnago Centro",
+   "price": 138000,
+   "sqm": 157,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": false,
+   "storage": true,
+   "energy": null,
+   "driveMin": 2,
+   "firstSeen": "2026-11-24",
+   "published": "2026-09-28",
+   "note": "Attico di 157 m² al quinto piano con ascensore, 3 camere, 2 bagni, ripostiglio e soffitta. Il garage non è citato: da chiedere, insieme a classe energetica e stato interno.",
+   "sources": [
+    {
+     "name": "Sogno Immobiliare",
+     "url": "https://www.sognoimmobiliare.it/property/maestoso-atticco-nel-cuore-di-legnago/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-24",
+     "price": 138000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Пентхаус із ліфтом, центр Леньяго",
+    "type": "Квартира (пентхаус)",
+    "zone": "Центр Леньяго",
+    "note": "Пентхаус 157 м² на п'ятому поверсі з ліфтом, 3 спальні, 2 ванні, комора і горище. Гараж не згадано: треба запитати, а також енергетичний клас і стан усередині.",
+    "questions": []
+   }
+  },
+  {
+   "id": "sogno-casa-colonica-villa-bartolomea-169",
+   "title": "Casa di campagna ricostruita, Villa Bartolomea",
+   "type": "Casa indipendente",
+   "zone": "Vicino a Villa Bartolomea",
+   "price": 169000,
+   "sqm": 160,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 11,
+   "firstSeen": "2026-11-24",
+   "published": "2026-01-12",
+   "note": "Casa di campagna ricostruita nei primi anni 2000, circa 160 m², 3 camere matrimoniali, 2 bagni, garage doppio grande, ripostigli e cantina. Annuncio di gennaio: da chiedere se è ancora libera, la classe energetica e la via.",
+   "sources": [
+    {
+     "name": "Sogno Immobiliare",
+     "url": "https://www.sognoimmobiliare.it/property/casa-colonica-ricostruita/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-24",
+     "price": 169000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Відбудований сільський будинок, Вілла-Бартоломеа",
+    "type": "Окремий будинок",
+    "zone": "Біля Вілла-Бартоломеа",
+    "note": "Сільський будинок, відбудований на початку 2000-х, близько 160 м², 3 двоспальні кімнати, 2 ванні, великий подвійний гараж, комори і погріб. Оголошення з січня: треба запитати, чи він ще вільний, енергетичний клас і вулицю.",
+    "questions": []
+   }
+  },
+  {
+   "id": "sogno-sanpietro-villetta-78",
+   "title": "Villetta affiancata con giardino, San Pietro",
+   "type": "Villetta affiancata",
+   "zone": "San Pietro di Legnago",
+   "price": 78000,
+   "sqm": 156,
+   "bedrooms": 3,
+   "bathrooms": null,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 5,
+   "firstSeen": "2026-11-24",
+   "published": "2026-08-25",
+   "note": "Villetta di 156 m² con giardino, 3 camere più una stanza con ingresso esterno, garage e cantina. Prezzo molto basso: da chiedere lo stato della casa, la classe energetica e i bagni.",
+   "sources": [
+    {
+     "name": "Sogno Immobiliare",
+     "url": "https://www.sognoimmobiliare.it/property/villetta-indipendente-affiancata-con-ampio-giardino-privato/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-24",
+     "price": 78000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Зблокований будиночок із садом, Сан-П'єтро",
+    "type": "Зблокований будиночок",
+    "zone": "Сан-П'єтро-ді-Леньяго",
+    "note": "Будиночок 156 м² із садом, 3 спальні та ще кімната з окремим входом, гараж і погріб. Дуже низька ціна: треба запитати про стан будинку, енергетичний клас і кількість ванних.",
+    "questions": []
+   }
+  },
+  {
    "id": "sogno-terrazzo-199",
+   "title": "Casa singola con ampio giardino",
+   "type": "Casa singola",
+   "zone": "Terrazzo, vicino al centro",
    "price": 199000,
    "sqm": 187,
    "bedrooms": 3,
@@ -1525,6 +1717,7 @@
    "driveMin": 11,
    "firstSeen": "2026-11-21",
    "published": "2026-08-04",
+   "note": "187 m² con 3 camere matrimoniali, garage di 32 m², cantina e grande giardino. Non è chiaro se i bagni sono uno o due; stato, anno e classe energetica da chiedere. Circa 11 minuti da Legnago.",
    "sources": [
     {
      "name": "Sogno Immobiliare",
@@ -1538,10 +1731,6 @@
     }
    ],
    "questions": [],
-   "title": "Casa singola con ampio giardino",
-   "type": "Casa singola",
-   "zone": "Terrazzo, vicino al centro",
-   "note": "187 m² con 3 camere matrimoniali, garage di 32 m², cantina e grande giardino. Non è chiaro se i bagni sono uno o due; stato, anno e classe energetica da chiedere. Circa 11 minuti da Legnago.",
    "uk": {
     "title": "Окремий будинок з великим садом",
     "type": "Окремий будинок",
@@ -1552,6 +1741,9 @@
   },
   {
    "id": "subito-667373200-terranegra",
+   "title": "Appartamento in casa di due famiglie a Terranegra",
+   "type": "Appartamento",
+   "zone": "Terranegra (Legnago)",
    "price": 158000,
    "sqm": 153,
    "bedrooms": 3,
@@ -1562,6 +1754,7 @@
    "driveMin": 4,
    "firstSeen": "2026-11-20",
    "published": "2026-11-06",
+   "note": "153 m² in una casa con solo due appartamenti, senza spese di condominio: 3 camere, 2 bagni, balcone e terrazzo, rinnovato nel 2012, garage. Da chiedere classe energetica, cantina e a che piano si trova.",
    "sources": [
     {
      "name": "Subito.it (Sogno Immobiliare)",
@@ -1583,10 +1776,6 @@
     }
    ],
    "questions": [],
-   "title": "Appartamento in casa di due famiglie a Terranegra",
-   "type": "Appartamento",
-   "zone": "Terranegra (Legnago)",
-   "note": "153 m² in una casa con solo due appartamenti, senza spese di condominio: 3 camere, 2 bagni, balcone e terrazzo, rinnovato nel 2012, garage. Da chiedere classe energetica, cantina e a che piano si trova.",
    "uk": {
     "title": "Квартира в будинку на дві сім'ї, Терранегра",
     "type": "Квартира",
@@ -1597,6 +1786,9 @@
   },
   {
    "id": "tecnocasa-61065942-almerini-porzione",
+   "title": "Porzione di bifamiliare su più livelli, Via Almerini",
+   "type": "Porzione di bifamiliare",
+   "zone": "Casette (Legnago), Via Almerini",
    "price": null,
    "sqm": 154,
    "bedrooms": 2,
@@ -1607,6 +1799,7 @@
    "driveMin": 5,
    "firstSeen": "2026-11-22",
    "published": null,
+   "note": "154 m² su più livelli, 2 camere matrimoniali più uno studio, 1 bagno più un servizio in taverna, garage (singolo o doppio: il testo non è chiaro). Da chiedere: prezzo, classe energetica, stato della casa e se lo studio può diventare la terza camera.",
    "sources": [
     {
      "name": "Tecnocasa",
@@ -1615,10 +1808,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Porzione di bifamiliare su più livelli, Via Almerini",
-   "type": "Porzione di bifamiliare",
-   "zone": "Casette (Legnago), Via Almerini",
-   "note": "154 m² su più livelli, 2 camere matrimoniali più uno studio, 1 bagno più un servizio in taverna, garage (singolo o doppio: il testo non è chiaro). Da chiedere: prezzo, classe energetica, stato della casa e se lo studio può diventare la terza camera.",
    "uk": {
     "title": "Частина двоквартирного будинку на кількох рівнях, вул. Альмеріні",
     "zone": "Казетте (Леньяго), вул. Альмеріні",
@@ -1629,6 +1818,9 @@
   },
   {
    "id": "tecnorete-61073658-almerini",
+   "title": "Villa singola in Via Almerini",
+   "type": "Villa singola",
+   "zone": "Casette (Legnago)",
    "price": null,
    "sqm": 158,
    "bedrooms": 3,
@@ -1639,6 +1831,7 @@
    "driveMin": 4,
    "firstSeen": "2026-11-21",
    "published": null,
+   "note": "Casa del 1965 in ottime condizioni ma mai ristrutturata: 158 m², 3 camere più una stanza al piano basso, 2 bagni, garage e ripostiglio. Prezzo e classe energetica non pubblicati: da chiedere.",
    "sources": [
     {
      "name": "Tecnorete",
@@ -1647,10 +1840,6 @@
    ],
    "priceHistory": [],
    "questions": [],
-   "title": "Villa singola in Via Almerini",
-   "type": "Villa singola",
-   "zone": "Casette (Legnago)",
-   "note": "Casa del 1965 in ottime condizioni ma mai ristrutturata: 158 m², 3 camere più una stanza al piano basso, 2 bagni, garage e ripostiglio. Prezzo e classe energetica non pubblicati: da chiedere.",
    "uk": {
     "title": "Окрема вілла на вул. Альмеріні",
     "type": "Окрема вілла",
@@ -1671,9 +1860,9 @@
    "outcome": "liked",
    "outcomeNote": "Visita fatta, ci è piaciuta. La casa è ancora al grezzo, in costruzione: fine lavori prevista per maggio 2027.",
    "uk": {
+    "outcomeNote": "Огляд відбувся, нам сподобалося. Будинок ще без оздоблення, будується: завершення робіт заплановано на травень 2027.",
     "title": "Вілла, вул. Альмеріні 47 — зустріч з інженерним бюро",
-    "zone": "Бюро Де Берті, вул. Діаз 1",
-    "outcomeNote": "Огляд відбувся, нам сподобалося. Будинок ще без оздоблення, будується: завершення робіт заплановано на травень 2027."
+    "zone": "Бюро Де Берті, вул. Діаз 1"
    }
   },
   {
