@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T13:21:00+01:00",
+ "updated": "2026-11-24T18:45:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -264,6 +264,10 @@
     {
      "name": "Immobiliare.it (Via Borghetto, Quercius)",
      "url": "https://www.immobiliare.it/annunci/134576301/"
+    },
+    {
+     "name": "Subito.it (Quercius)",
+     "url": "https://www.subito.it/ville-singole-e-a-schiera/villa-a-legnago-vr-verona-667768843.htm"
     }
    ],
    "priceHistory": [],
@@ -1251,12 +1255,16 @@
    "energy": "E",
    "driveMin": 3,
    "firstSeen": "2026-11-19",
-   "published": "2026-07-04",
+   "published": "2026-11-09",
    "note": "Villa singola: piano rialzato con 3 camere e bagno, semi-interrato con taverna e secondo bagno, garage di 35 m², cantina, giardino di circa 600 m². Classe energetica E. Annuncio di luglio 2026: chiedere se è ancora disponibile.",
    "sources": [
     {
      "name": "Immobiliare.it (Primacasa)",
      "url": "https://www.immobiliare.it/annunci/126356283/"
+    },
+    {
+     "name": "Casa.it",
+     "url": "https://www.casa.it/immobili/53212175/"
     }
    ],
    "priceHistory": [],
