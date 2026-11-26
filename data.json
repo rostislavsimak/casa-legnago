@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:29:00+01:00",
+ "updated": "2026-11-26T13:40:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -900,6 +900,43 @@
    }
   },
   {
+   "id": "immobiliare-113814215-terranegra-siliotto",
+   "title": "Casa singola, Via Siliotto (Terranegra)",
+   "type": "Casa singola su due piani",
+   "zone": "Terranegra (Legnago)",
+   "price": 175000,
+   "sqm": 192,
+   "bedrooms": 3,
+   "bathrooms": 1,
+   "garage": true,
+   "storage": null,
+   "energy": null,
+   "driveMin": 5,
+   "firstSeen": "2026-11-26",
+   "published": "2026-11-06",
+   "note": "Casa libera e abitabile subito, in una via tranquilla, con giardino tutto intorno: 3 camere, 1 bagno, portico con veranda e garage per 2 auto. Da chiedere la classe energetica (non indicata), se c'è una cantina e com'è lo stato di impianti e finiture.",
+   "sources": [
+    {
+     "name": "Immobiliare.it",
+     "url": "https://www.immobiliare.it/annunci/113814215/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "price": 175000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Окремий будинок, вулиця Сіліотто (Терранегра)",
+    "zone": "Терранегра (Леньяго)",
+    "type": "Окремий двоповерховий будинок",
+    "note": "Будинок вільний і готовий до проживання одразу, на тихій вулиці, з садом довкола: 3 спальні, 1 ванна кімната, портик з верандою та гараж на 2 авто. Треба запитати енергоклас (не вказаний), чи є підвал і в якому стані комунікації та оздоблення.",
+    "questions": []
+   }
+  },
+  {
    "id": "immobiliare-122279606-san-vito-mantegna",
    "title": "Mezza casa al primo piano a San Vito di Cerea",
    "type": "Porzione di bifamiliare",
@@ -933,6 +970,43 @@
     "type": "Частина будинку на дві сім'ї",
     "zone": "Сан-Віто (Череа)",
     "note": "Другий поверх з окремим входом, 155 м², 3 спальні, 2 ванні кімнати, 2 гаражі; будинок 1969 року, придатний для життя. Оголошення старе: треба запитати, чи ще продається, енергетичний клас і чи є підвал.",
+    "questions": []
+   }
+  },
+  {
+   "id": "immobiliare-125743135-schiera-vespucci",
+   "title": "Villa a schiera, Via Vespucci (Legnago Centro)",
+   "type": "Villa a schiera",
+   "zone": "Legnago Centro",
+   "price": 265000,
+   "sqm": 169,
+   "bedrooms": 3,
+   "bathrooms": 3,
+   "garage": true,
+   "storage": true,
+   "energy": "B",
+   "driveMin": 3,
+   "firstSeen": "2026-11-26",
+   "published": "2026-08-08",
+   "note": "Casa moderna pronta da abitare, venduta da privato: 3 camere (una matrimoniale con bagno e cabina armadio), 3 bagni, lavanderia-ripostiglio, box collegato alla casa e giardino davanti e dietro, classe B. Da chiedere quanto è grande il box e l'anno di costruzione.",
+   "sources": [
+    {
+     "name": "Immobiliare.it",
+     "url": "https://www.immobiliare.it/annunci/125743135/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "price": 265000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Таунхаус, вулиця Веспуччі (центр Леньяго)",
+    "zone": "Центр Леньяго",
+    "type": "Таунхаус (вілла в ряду)",
+    "note": "Сучасний будинок, готовий до проживання, продає власник: 3 спальні (одна подружня з власною ванною та гардеробною), 3 ванні кімнати, пральня-комора, гараж, з'єднаний з будинком, сад спереду і ззаду, енергоклас B. Треба запитати розмір гаража та рік будівництва.",
     "questions": []
    }
   },
