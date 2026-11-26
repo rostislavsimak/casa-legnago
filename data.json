@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T18:22:00+01:00",
+ "updated": "2026-11-26T08:29:00+01:00",
  "listings": [
   {
    "id": "almerini-47",
@@ -69,6 +69,10 @@
     {
      "name": "Immobiliare.it (Bisson & Favato)",
      "url": "https://www.immobiliare.it/annunci/133255558/"
+    },
+    {
+     "name": "Bisson & Favato",
+     "url": "https://www.bissonefavatoimmobiliare.it/it/porzione-di-bifamiliare-ristrutturata-con-due-garage-e-ampio-giardino/5168494.html"
     }
    ],
    "priceHistory": [
@@ -436,6 +440,43 @@
    }
   },
   {
+   "id": "casait-54491867-cerea-puccini",
+   "title": "Casa con box doppio a Cerea",
+   "type": "Casa indipendente",
+   "zone": "Cerea centro",
+   "price": 189000,
+   "sqm": 166,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": "G",
+   "driveMin": 11,
+   "firstSeen": "2026-11-26",
+   "published": "2026-11-09",
+   "note": "Casa di 166 m² con 3 camere e 2 bagni, box doppio, posto auto, taverna, ripostiglio e cortile privato. È abitabile ma vecchia (1960) e in classe energetica G: chiedere quanto si spende di riscaldamento e in che stato sono impianti e finestre.",
+   "sources": [
+    {
+     "name": "Casa.it (Casa Cerea)",
+     "url": "https://www.casa.it/immobili/54491867/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "price": 189000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Будинок із подвійним гаражем у Череа",
+    "type": "Окремий будинок",
+    "zone": "Череа, центр",
+    "note": "Будинок 166 м², 3 спальні і 2 ванні, подвійний гараж, місце для авто, таверна, комора і власне подвір'я. Придатний для життя, але старий (1960) і має енергетичний клас G: запитати, скільки коштує опалення і в якому стані комунікації та вікна.",
+    "questions": []
+   }
+  },
+  {
    "id": "casait-54636136-villa-bartolomea-259",
    "title": "Casa indipendente ristrutturata, Villa Bartolomea",
    "type": "Casa indipendente",
@@ -607,6 +648,10 @@
     {
      "name": "Casa.it",
      "url": "https://www.casa.it/immobili/55262188/"
+    },
+    {
+     "name": "Immobiliare.it (Sogno rif. 18-V)",
+     "url": "https://www.immobiliare.it/annunci/134931469/"
     }
    ],
    "priceHistory": [
@@ -621,6 +666,43 @@
     "type": "Окремий будинок (дві квартири)",
     "zone": "Спінімбекко (Вілла-Бартоломеа)",
     "note": "Великий будинок (320 м²) з двома з'єднаними квартирами: разом 4 спальні та 3 ванні, подвійний гараж і погріб, придатний для життя. Треба запитати енергетичний клас і чи можна жити в ньому як в одному будинку.",
+    "questions": []
+   }
+  },
+  {
+   "id": "casait-55304010-carpi-scarpariole",
+   "title": "Casa con fotovoltaico a Carpi",
+   "type": "Casa indipendente su due livelli",
+   "zone": "Carpi (Villa Bartolomea)",
+   "price": 260000,
+   "sqm": 235,
+   "bedrooms": null,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": true,
+   "energy": null,
+   "driveMin": 9,
+   "firstSeen": "2026-11-26",
+   "published": "2026-11-26",
+   "note": "Casa di 235 m² su due piani con box doppio, due posti auto coperti, cantina, giardino e un grande impianto fotovoltaico con batteria. Il primo piano è abitato, il piano terra è da sistemare: chiedere cosa manca, quante camere ci sono e la classe energetica.",
+   "sources": [
+    {
+     "name": "Casa.it (Ready House)",
+     "url": "https://www.casa.it/immobili/55304010/"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "price": 260000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Будинок із сонячними панелями в Карпі",
+    "type": "Окремий будинок на два поверхи",
+    "zone": "Карпі (Вілла-Бартоломеа)",
+    "note": "Будинок 235 м² на два поверхи з подвійним гаражем, двома критими місцями для авто, підвалом, садом і великою системою сонячних панелей з акумулятором. На другому поверсі живуть, перший поверх треба облаштувати: запитати, що там бракує, скільки спалень і який енергетичний клас.",
     "questions": []
    }
   },
@@ -942,6 +1024,10 @@
     {
      "name": "Casa.it",
      "url": "https://www.casa.it/immobili/54368462/"
+    },
+    {
+     "name": "Subito (privato)",
+     "url": "https://www.subito.it/ville-singole-e-a-schiera/casa-indipendente-di-286-m%C2%B2-con-piu-di-5-locali-e-verona-658688164.htm"
     }
    ],
    "priceHistory": [
@@ -1248,6 +1334,10 @@
     {
      "name": "Immobiliare.it (dove.it)",
      "url": "https://www.immobiliare.it/annunci/131995218/"
+    },
+    {
+     "name": "Subito (dove.it)",
+     "url": "https://www.subito.it/ville-singole-e-a-schiera/villa-di-300-m%C2%B2-con-5-locali-e-box-auto-a-legnago-verona-659085753.htm"
     }
    ],
    "priceHistory": [],
@@ -1645,6 +1735,10 @@
     {
      "name": "Sogno Immobiliare",
      "url": "https://www.sognoimmobiliare.it/property/maestoso-atticco-nel-cuore-di-legnago/"
+    },
+    {
+     "name": "Subito",
+     "url": "https://www.subito.it/appartamenti/maestoso-appartamento-nel-cuore-di-legnago-vr-verona-658312642.htm"
     }
    ],
    "priceHistory": [
@@ -1719,6 +1813,10 @@
     {
      "name": "Sogno Immobiliare",
      "url": "https://www.sognoimmobiliare.it/property/villetta-indipendente-affiancata-con-ampio-giardino-privato/"
+    },
+    {
+     "name": "Subito",
+     "url": "https://www.subito.it/ville-singole-e-a-schiera/villetta-indipendente-con-ampio-giardino-verona-658296196.htm"
     }
    ],
    "priceHistory": [
@@ -1770,6 +1868,43 @@
     "type": "Окремий будинок",
     "zone": "Терраццо, біля центру",
     "note": "187 м², 3 великі спальні, гараж 32 м², підвал і великий сад. Незрозуміло, одна чи дві ванні кімнати; стан, рік і енергоклас треба спитати. Приблизно 11 хвилин від Леньяго.",
+    "questions": []
+   }
+  },
+  {
+   "id": "subito-647038136-porto-appartamento",
+   "title": "Appartamento grande a Porto di Legnago",
+   "type": "Appartamento al primo piano",
+   "zone": "Porto di Legnago",
+   "price": 172000,
+   "sqm": 160,
+   "bedrooms": 3,
+   "bathrooms": 2,
+   "garage": true,
+   "storage": null,
+   "energy": null,
+   "driveMin": 3,
+   "firstSeen": "2026-11-26",
+   "published": "2026-05-14",
+   "note": "Appartamento di 160 m² al primo piano in un bel palazzo, con 3 camere, 2 bagni, caminetto, balcone e box. Lo vende un privato e l'annuncio è di maggio: chiedere se è ancora libero, la classe energetica e se c'è una cantina.",
+   "sources": [
+    {
+     "name": "Subito (privato)",
+     "url": "https://www.subito.it/appartamenti/appartamento-legnago-verona-647038136.htm"
+    }
+   ],
+   "priceHistory": [
+    {
+     "date": "2026-11-26",
+     "price": 172000
+    }
+   ],
+   "questions": [],
+   "uk": {
+    "title": "Велика квартира в Порто-ді-Леньяго",
+    "type": "Квартира на другому поверсі",
+    "zone": "Порто-ді-Леньяго",
+    "note": "Квартира 160 м² на другому поверсі в гарному будинку: 3 спальні, 2 ванні, камін, балкон і гараж. Продає приватна особа, оголошення з травня: запитати, чи вона ще продається, який енергетичний клас і чи є підвал.",
     "questions": []
    }
   },
